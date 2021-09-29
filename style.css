@@ -177,7 +177,7 @@ nav img {
     padding: 0 8px;
 }
 
-.health img {
+.card img {
     height: 20%; 
     width: 20%;
 }
@@ -553,7 +553,6 @@ tr:nth-child(odd) {
     .site-mobile {
         display: block;
         background-color:black;
-        padding:45px 0 20px;
         font-size:15px;
         line-height:24px;
         color:#737373;
