@@ -72,7 +72,7 @@ figcaption p {
 }
 
 header {
-    background-image: url("images/111.jpg"), url("images/22.jpg");
+    background-image: url("../images/111.jpg"), url("../images/22.jpg");
     background-blend-mode: soft-light;
     border: 1px black solid;
     height: 50%;
