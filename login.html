@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>ML_Strenght</title>
         <script src="interactivity.js"></script>
-        <link rel="stylesheet" href="images/style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
 
@@ -36,30 +36,31 @@
             </ul>
         </nav>
 
-        <main class="login_form">
-            <form>
-                <h1>Register</h1>
+        <main>
+            <div class="login">
+            <h1>Register Form</h1>
+            <form class="login_form">
                 <p>Please fill in this form to create an account.</p>
                 <hr>
                 <div class="label">
                     <label for="firstname"><b>First Name</b></label>
                 </div>
-                <input type="text" placeholder="Enter First Name" name="firstname" id="firstname" required>
+                <input type="text" placeholder="First Name" name="firstname" id="firstname" required>
 
                 <div class="label">
                     <label for="lastname"><b>Last Name</b></label>
                 </div>
-                <input type="text" placeholder="Enter Last Name" name="lastname" id="lastname" required>
+                <input type="text" placeholder="Last Name" name="lastname" id="lastname" required>
               
                 <div class="label">
                     <label for="email"><b>Email</b></label>
                 </div>
-                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                <input type="text" placeholder="Email" name="email" id="email" required>
               
                 <div class="label">
                     <label for="psw"><b>Password</b></label>
                 </div>
-                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                <input type="password" placeholder="Password" name="psw" id="psw" required>
 
                 <div class="label">
                     <label for="psw-repeat"><b>Repeat Password</b></label>
@@ -69,25 +70,27 @@
                 <div class="label">
                     <label for="message"><b>Message</b></label>
                 </div>
-                <input type="text" placeholder="Enter Your Message" name="message" id="message" required>
+                <input type="text" placeholder="Message" name="message" id="message" required>
 
                 <div class="label">
                     <label for="join"><b>Yes, I wood like to resive news E-mail</b></label>
                     <input type="checkbox" name="join" id="join" required> 
                 </div>
                 <hr>
-                <button type="submit" class="registerbtn">SUBMIT</button>    
+                <button type="submit" class="registerbtn">Submit</button>   
+                <button type="submit" class="registerbtnmob">Submit Button</button>  
             </form>
-              
+            </div>
         </main>
         
         <footer>
             <div class="site-footer">
                 <div class="container1">
                     <div class="row">
-                        <div class="Login">
-                            <h2>LOGIN</h2>
-                            <p class="text-justify"> Phone: 0753464321 Email: <a>ml.strength@gmail.com</a></p>
+                        <div class="contacts">
+                            <h2>CONTACTS:</h2>
+                            <p class="text-justify"> Phone: 0753464321</p>
+                            <p class="text-justify">Email: <a>ml.strength@gmail.com</a></p>
                         </div>
       
                         <div class="sitemap">
@@ -102,7 +105,6 @@
                         </div>
                     </div>
                 </div>
-                <hr>
                 <div class="container1">
                     <div class="row">
                         <div class="copyright">

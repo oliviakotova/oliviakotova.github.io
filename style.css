@@ -2,13 +2,13 @@ body,
 html {
     height: 100%;
     margin: 0;
-    background-color: black;
+    background-color: white;
     border: 1px black solid;
     font-family: "Lato", sans-serif;
 }
 
 h1 {
-    color:whitesmoke;
+    color: black;
     text-align: left;
     text-decoration: none;
     font-size: 44px;
@@ -18,12 +18,10 @@ h1 {
 
 h2 {
     color: whitesmoke;
-    text-align: center;
     text-decoration: none;
     font-size: 22px;
-    padding-left: 30%;
-    padding-right: 30%;
-    width: 40%;
+    padding-left: 10%;
+    width: 70%;
 }
 
 h3 {
@@ -63,19 +61,21 @@ figcaption p {
 }
 
 .navmain a:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: grey;
     color: rgb(255, 255, 255);
+    text-decoration: underline;
 }
 
 .navmain a.active {
-    background-color:rgba(10,10,10,0.8);
-    color: white;
+    background-color:yellow;
+    color: black;
 }
 
 header {
-    background-color:black;
+    background-image: url("images/111.jpg"), url("images/22.jpg");
+    background-blend-mode: soft-light;
     border: 1px black solid;
-    height: 10%;
+    height: 50%;
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
@@ -83,26 +83,36 @@ header {
 }
 
 header img {
-    height: 100%;
+    height: 10%;
     position: relative;
-    filter: contrast(90%);
+    filter: grayscale();
 }
 
 .health {
     display: inline-block;
     width: 100%;
-    background-image: url("1.jpeg");
+    background-blend-mode: multiply;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-color: black;
+}
+.health h1 {
+    color: whitesmoke;
+}
+
+
+.health img {
+    width: 20%;
+    height: 20%;
 }
 
 main {
     display: flex;
-    border: 1px black solid;
     position: relative;
 }
+
 
 ul {
     margin: 0;
@@ -129,6 +139,11 @@ li {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
+}
+
+.row {
+    padding-top: 10%;
+    padding-left: 10%;
 }
 
 .navaside {
@@ -245,10 +260,13 @@ nav img {
     padding: 0 8px;
 }
 
+.about h1{
+    color: whitesmoke;
+}
+
 .about h2 {
     color: whitesmoke;
     padding-left: 10%;
-    padding-top: 10%;
 }
 
 .about p {
@@ -286,31 +304,61 @@ nav img {
 
 .login_form {
     display: block;
-    border: 1px black solid;
     position: relative;
-    padding: 16px;
+    padding: 10%;
+    padding-top: 1%;
     background-color: white;
-    width: 100%;
+    width: 80%;
 }
 
-.login_form h1 {
+.login h1 {
     color: black;
-    text-align: left;
-    text-decoration: none;
-    font-size: 44px;
-    padding: 2%;
-    width: 40%;
-    margin: 0;
 }
 
 .login_form * {
     box-sizing: border-box;
 }
 
+.login {
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.ourclasses {
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.ourclasses h1 {
+    color: black;
+}
+
+.blogowner {
+    background-color: white;
+    display: flex;
+    position: relative;
+}
+
+.blogowner h1 {
+    color: black;
+}
+
 input[type=text], input[type=password] {
     width: 100%;
     padding: 15px;
-    margin: 5px 0 22px 0;
+    margin: 5px 30px 22px 35px;
     display: inline-block;
     border: none;
     background: #f1f1f1;
@@ -327,8 +375,8 @@ hr {
 }
   
 .registerbtn {
-    background-color: #eeff00;
-    color: white;
+    background-color: yellow;
+    color: black;
     padding: 16px 20px;
     margin: 4% 60%;
     border: none;
@@ -336,9 +384,14 @@ hr {
     width: 20%;
     opacity: 0.9;
 }
-  
+
+.registerbtnmob {
+    display: none;
+}
+
 .registerbtn:hover {
     opacity: 1;
+    background-color: dodgerblue;
 }
   
 a {
@@ -359,34 +412,33 @@ a {
 
 .leftcolumn { 
     -ms-flex: 70%; /* IE10 */
-    flex: 70%;
-    width: 70%;
+    flex: 60%;
+    width: 40%;
+    padding-left: 10%;
 }
 
 .rightcolumn {
     -ms-flex: 30%; /* IE10 */
     flex: 30%;
-    width: 30%;
+    width: 50%;
     padding: 10%;
+    padding-top: 0%;
 }
 
 .rightcolumn img {
     width: 100%;
     padding: 20px;
+    padding-top: 0%;
 }
 
 .rowblog {
     background-color: white;
-    padding: 15%;
+    padding: 20%;
+    padding-left: 0;
     flex-direction: column;
+    padding-top: 5%;
 }
 
-.rowblog h1 {
-    color:black;
-    text-align: left;
-    padding-left: 0%;
-    width: 70%;
-}
 
 #myTable {
     border-collapse: collapse; 
@@ -420,7 +472,7 @@ a {
     color: black;
     margin: 0;
     padding: 0;
-    padding-bottom: 7%;
+   
 }
 
 tr:nth-child(even) {
@@ -432,6 +484,7 @@ tr:nth-child(odd) {
 }
 
 
+
 @media (max-width: 600px) {
 
     #checkboxlabel {
@@ -440,6 +493,19 @@ tr:nth-child(odd) {
         padding-left: 7%;
         padding-right: 1%;
     }
+
+    #checkboxlabel:hover {
+        color:yellow;
+    }
+
+    .fa-bars:hover {
+        transform:rotate(90deg);
+    }
+
+    .fa-bars:checked+.navmain {
+        background-color: yellow;
+        transform:rotate(90deg);
+    }     
 
     .navmain {
         display: none;
@@ -474,7 +540,7 @@ tr:nth-child(odd) {
     }
 
     .columnabout {
-        width: 80%;
+        width: 100%;
         display: block;
         margin: auto;
         padding-left: 20%;
@@ -497,15 +563,16 @@ tr:nth-child(odd) {
         display: none;
     }
 
-    .registerbtn {
-        background-color: #eeff00;
-        color: white;
+    .registerbtnmob {
+        background-color: yellow;
+        color: black;
         padding: 16px 20px;
         margin: 4% 10%;
         border: none;
         cursor: pointer;
         width: 80%;
         opacity: 0.9;
+        display: block;
     }
 
     .rowblog {
@@ -535,5 +602,13 @@ tr:nth-child(odd) {
     tr:nth-child(odd) {
         background: #FFF;
     }
+
+    .registerbtn {
+        display:none;
+    }
   
 }
+
+
+  
+
