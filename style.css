@@ -1,0 +1,614 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    background-color: white;
+    border: 1px black solid;
+    font-family: "Lato", sans-serif;
+}
+
+h1 {
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    font-size: 44px;
+    padding-left: 5%;
+    width: 40%;
+}
+
+h2 {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 22px;
+    padding-left: 10%;
+    width: 70%;
+}
+
+h3 {
+    color: whitesmoke;
+    text-align: left;
+    text-decoration: none;
+    font-size: 15px;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-weight: normal;
+    background-color:rgba(24, 22, 22, 0.5);
+}
+
+figcaption p { 
+    color: white;
+}
+
+.navmain {
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    align-items: flex-end;
+    background-color: rgb(28, 28, 28);
+}
+
+.navmain a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 19px;
+    background-color: rgb(28, 28, 28);
+}
+
+.navmain a:hover {
+    background-color: grey;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+.navmain a.active {
+    background-color:yellow;
+    color: black;
+}
+
+header {
+    background-image: url("images/111.jpg"), url("images/22.jpg");
+    background-blend-mode: soft-light;
+    border: 1px black solid;
+    height: 50%;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header img {
+    height: 10%;
+    position: relative;
+    filter: grayscale();
+}
+
+.health {
+    display: inline-block;
+    width: 100%;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: black;
+}
+.health h1 {
+    color: whitesmoke;
+}
+
+
+.health img {
+    width: 20%;
+    height: 20%;
+}
+
+main {
+    display: flex;
+    position: relative;
+}
+
+
+ul {
+    margin: 0;
+}
+
+ul header {
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+.footer li {
+    margin: .5em;
+    list-style: none;
+    height: 2em;
+    width: 5em;
+    background-color: orange;
+    border: 1px black solid;
+}
+
+.navheader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.row {
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+.navaside {
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    width: 60%
+}
+
+nav img {
+    height: 15%;
+}
+
+#checkbox,
+#checkboxlabel {
+    display: none;
+    height: 7%;
+    background-color: black;
+}
+
+nav img {
+    display: none;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.health img {
+    height: 20%; 
+    width: 20%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container1 {
+    padding: 0 16px;
+}
+
+.container1::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.site-footer {
+    background-color:black;
+    padding:45px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#737373;
+}
+
+.site-footer hr {
+    border-top-color:#737373;
+    opacity:0.5
+}
+
+.site-footer hr.small {
+    margin:20px 0
+}
+
+.site-footer h2 {
+    color:#fff;
+    font-size:16px;
+    text-transform:uppercase;
+    margin-top:5px;
+    letter-spacing:2px;
+}
+
+.site-footer a {
+    color:#737373;
+}
+
+.site-footer a:hover {
+    color: red;
+    text-decoration:none;
+}
+
+.footer-links {
+    padding-left:0;
+    list-style:none;
+}
+
+.footer-links li {
+    display:block;
+}
+
+.footer-links a {
+    color:#737373;
+    font-family: "Lato", sans-serif;
+}
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover {
+    color: red;
+    text-decoration:none;
+}
+
+.footer-links.inline li {
+    display:inline-block
+}
+
+.columnabout {
+    float: left;
+    width: 17%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.about h1{
+    color: whitesmoke;
+}
+
+.about h2 {
+    color: whitesmoke;
+    padding-left: 10%;
+}
+
+.about p {
+    color: whitesmoke;
+    padding-left: 10%;
+} 
+
+.about h3 {
+    color: whitesmoke;  
+}
+
+.aboutasa h3 {
+    color: whitesmoke; 
+    padding-left: 10%;
+    margin: 0%;
+
+}
+
+.aboutasa {
+    padding: 3%;
+}
+
+.about {
+    background-color: black;
+}
+
+.copyright-text {
+    margin:0
+}
+
+.site-mobile {
+    display:none;
+}  
+
+
+.login_form {
+    display: block;
+    position: relative;
+    padding: 10%;
+    padding-top: 1%;
+    background-color: white;
+    width: 80%;
+}
+
+.login h1 {
+    color: black;
+}
+
+.login_form * {
+    box-sizing: border-box;
+}
+
+.login {
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.ourclasses {
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.ourclasses h1 {
+    color: black;
+}
+
+.blogowner {
+    background-color: white;
+    display: flex;
+    position: relative;
+}
+
+.blogowner h1 {
+    color: black;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 30px 22px 35px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+  
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+  
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+  
+.registerbtn {
+    background-color: yellow;
+    color: black;
+    padding: 16px 20px;
+    margin: 4% 60%;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+}
+
+.registerbtnmob {
+    display: none;
+}
+
+.registerbtn:hover {
+    opacity: 1;
+    background-color: dodgerblue;
+}
+  
+a {
+    color: dodgerblue;
+}
+  
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.rowblog {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+
+.leftcolumn { 
+    -ms-flex: 70%; /* IE10 */
+    flex: 60%;
+    width: 40%;
+    padding-left: 10%;
+}
+
+.rightcolumn {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    width: 50%;
+    padding: 10%;
+    padding-top: 0%;
+}
+
+.rightcolumn img {
+    width: 100%;
+    padding: 20px;
+    padding-top: 0%;
+}
+
+.rowblog {
+    background-color: white;
+    padding: 20%;
+    padding-left: 0;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+
+#myTable {
+    border-collapse: collapse; 
+    width: 100%; 
+    border: 1px solid #ddd; 
+    font-size: 18px; 
+}
+
+#myTable th, #myTable td {
+    text-align: left;
+    padding: 12px;
+}
+
+#myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd; 
+}
+
+#myTable tr.header, #myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #dadada;
+}
+
+.classes {
+    padding: 5%;
+    display: block;
+    background-color: whitesmoke;
+}
+
+.classes h1 {
+    color: black;
+    margin: 0;
+    padding: 0;
+   
+}
+
+tr:nth-child(even) {
+    background: #eee;
+}
+
+tr:nth-child(odd) {
+    background: #FFF;
+}
+
+
+
+@media (max-width: 600px) {
+
+    #checkboxlabel {
+        color: #f2f2f2;
+        display: inline-block;
+        padding-left: 7%;
+        padding-right: 1%;
+    }
+
+    #checkboxlabel:hover {
+        color:yellow;
+    }
+
+    .fa-bars:hover {
+        transform:rotate(90deg);
+    }
+
+    .fa-bars:checked+.navmain {
+        background-color: yellow;
+        transform:rotate(90deg);
+    }     
+
+    .navmain {
+        display: none;
+        height: auto;
+    }
+
+    nav img {
+        margin-top: 2%;
+        height: 2em;
+        display: inline-block;
+    }
+
+    nav {
+        background-color: black;
+    }
+
+    #checkbox:checked+.navmain {
+        display: block;
+        height: 5%;
+        padding-left: 5%;
+    }
+
+    header {
+        display: none;
+    }
+
+    .column {
+        width: 60%;
+        display: block;
+        margin: auto;
+        padding-left: 20%;
+    }
+
+    .columnabout {
+        width: 100%;
+        display: block;
+        margin: auto;
+        padding-left: 20%;
+    }
+
+    .site-footer {
+        display: none;
+    }
+
+    .site-mobile {
+        display: block;
+        background-color:black;
+        padding:45px 0 20px;
+        font-size:15px;
+        line-height:24px;
+        color:#737373;
+    }
+
+    .label {
+        display: none;
+    }
+
+    .registerbtnmob {
+        background-color: yellow;
+        color: black;
+        padding: 16px 20px;
+        margin: 4% 10%;
+        border: none;
+        cursor: pointer;
+        width: 80%;
+        opacity: 0.9;
+        display: block;
+    }
+
+    .rowblog {
+        display: inline-block;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .headertable {
+        display:none
+    }
+
+    td:first-child {
+        font-style: oblique;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    tr:nth-child(even) {
+        background: #eee;
+    }
+    
+    tr:nth-child(odd) {
+        background: #FFF;
+    }
+
+    .registerbtn {
+        display:none;
+    }
+  
+}
+
+
+  
+
