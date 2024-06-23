@@ -2,11 +2,11 @@
   "name": "portfolio-oliviakotova",
   "version": "0.1.0",
   "engines": {
-    "npm": "9.x"
+    "npm": "8.x"
   },
   "private": true,
   "scripts": {
-    "dev": "npm run dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
