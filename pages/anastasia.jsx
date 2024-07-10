@@ -24,7 +24,7 @@ const anastasia = () => {
 
       <div className="max-w-[1240px] mx-auto p-6 grid md:grid-cols-5 gap-8 py-8">
         <div className="col-span-4">
-          <p>Project</p>
+          <p>Project!!!</p>
           <h2>In progress</h2>
           {/* <p>bla-bla</p> */}
           <a href="" target="_blank" rel="noreferrer">
