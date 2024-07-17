@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import AnastImg from "../public/assets/projects/anastasia_laptop.jpg";
 import dogoodImg from "../public/assets/projects/dogood_mobile.png";
-import krisImg from "../public/assets/projects/kristina_devises.png";
+import koshImg from "../public/assets/projects/koshkalaptop.jpg";
 import dogoodadmImg from "../public/assets/projects/admin_panel.png";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Project from "./Project";
@@ -17,9 +17,9 @@ const Projects = () => {
         <h2 className="py-4">{/* What I've Built */}</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <Project
-            title="Support and Care for Women"
-            backgroundImg={krisImg}
-            projectUrl="/kristina"
+            title="Photography and Videography, Sydney"
+            backgroundImg={koshImg}
+            projectUrl="/koshkamedia"
             tech="WordPress, Elementor"
           />
           <Project
