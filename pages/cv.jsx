@@ -32,7 +32,7 @@ const cv = () => {
               </p>
               <p>
                 <a
-                  p
+                  p="true"
                   className="py-4 underline cursor-pointer text-[hsl(217,56%,45%)]"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -50,23 +50,20 @@ const cv = () => {
               <p>
                 Diploma in Website Development (TAFE South Bank, QLD) — Jul 2022
               </p>
-              <p>
-                Master of Science in Mechanical Engineering (National University
-                of Shipbuilding, Mykolaiv, Ukraine) - 2007
-              </p>
+
               <h3 className="text-[hsl(217,56%,45%)] uppercase pt-8">
                 Summary
               </h3>
               <p>
                 Being full of energy I’m looking for employment in IT industry
-                as a Graduate/Junior Developer. Having genuine interest in IT,
-                began exploring deeply that area couple years ago to make a
-                career change. Aiming to achieve sufficient foundation to become
-                a professional I graduated at TAFE South Bank with Diploma in
-                Web Development where I gained hands-on experience with
-                JavaScript, ReactJS, NodeJS, Data Structures, APIs, SQL and non
-                SQL (MongoDB) database, Bootstrap and tech principles and
-                culture via both team/individual projects, code reviews and
+                as a Junior Developer. Having genuine interest in IT, began
+                exploring deeply that area couple years ago to make a career
+                change. Aiming to achieve sufficient foundation to become a
+                professional I graduated at TAFE South Bank with Diploma in Web
+                Development where I gained hands-on experience with JavaScript,
+                ReactJS, NodeJS, Data Structures, APIs, SQL and non SQL
+                (MongoDB) database, Bootstrap and tech principles and culture
+                via both team/individual projects, code reviews and
                 presentations. Looking to launch my career in tech after
                 graduating. I believe my passion in solving complex tasks by
                 applying modern IT solutions will be an asset to your company.
@@ -130,24 +127,37 @@ const cv = () => {
                 Australia) — Sep 2019 - Present time
               </h4>
               <p>
-                <Link href="https://premaphoto.com/">
+                <Link href="https://koshkamedia.com/">
                   <a
                     p
                     className="pr-2 underline cursor-pointer"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    premaphoto.com
+                    Koshka Media
                   </a>
                 </Link>
-                (one of Koshka’s Media Pty Ltd business names) is one of the
-                greatest company to provide high quality services for wedding
-                and family photos and films in Sydney. I’m honoured to help
-                casually and remotely at the Prema Photo & Video and give a hand
-                when necessary by utilising my expertise and knowledge in:
+                is one of the greatest company to provide high quality services
+                for wedding and family photos and films in Sydney. I’m honoured
+                to help casually and remotely at the Prema Photo & Video and
+                give a hand when necessary by utilising my expertise and
+                knowledge in:
               </p>
               <p>• Retouching wedding and family photos </p>
               <p>• Image composition</p>
+              <p>
+                Builded a website{" "}
+                <Link href="https://koshkamedia.com/">
+                  <a
+                    p
+                    className="pr-2 underline cursor-pointer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    koshkamedia.com
+                  </a>
+                </Link>
+              </p>
               <p>
                 During this time I started exploring online tutorials for Web
                 Development (html/ css/ js) and studied full- time at TAFE South
@@ -158,13 +168,22 @@ const cv = () => {
                 2014 - Aug 2017
               </h4>
               <p>
-                Africa Studio is one of the leading companies producing and
-                selling tens of thousands professional stock photos and designs
-                within impressive variety of topics at platforms such as
-                Shutterstock
-                <Link href="https:// www.shutterstock.com/g/belchonock">
+                <Link href="https://stock.adobe.com/au/contributor/293313/africa-studio">
                   <a
                     p
+                    className="pr-2 underline cursor-pointer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Afrika Studio
+                  </a>
+                </Link>
+                is one of the leading companies producing and selling tens of
+                thousands professional stock photos and designs within
+                impressive variety of topics at platforms such as Shutterstock
+                <Link href="https:// www.shutterstock.com/g/belchonock">
+                  <a
+                    //p
                     className="p-2 underline cursor-pointer"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -175,7 +194,7 @@ const cv = () => {
                 and Adobe Stock
                 <Link href="https://stock.adobe.com/contributor/293313/">
                   <a
-                    p
+                    p={true}
                     className="p-2 underline cursor-pointer"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -198,19 +217,12 @@ const cv = () => {
               <p>• My final designed work were the highest selling items</p>
               <p>• Increased company’s standards of quality</p>
               <p>• Reduced the cost of design due to fast work</p>
-              <h4 className="text-[hsl(217,56%,45%)] pt-8">
-                Graphic Designer at VeronikaLove (Mykolayiv, Ukraine) — Dec 2008
-                - Dec 2010
-              </h4>
-              <p>
-                VeronicaLove is one of the communication platforms between
-                future Slavic partners.
-              </p>
-              <p>
-                • Retouching photos with removing any kind of imperfections and
-                giving magazine’s front page quality
-              </p>
-              <p>• Colour matching and creating banners for advertising</p>
+              <a href="/cv.pdf" download="olivia_kotova_cv">
+                <p className="underline cursor-pointer hover:scale-10 ease-in pt-16 ">
+                  Download CV
+                </p>
+              </a>
+
               <Link href="/#main">
                 <p className="underline cursor-pointer hover:scale-10 ease-in pt-16 ">
                   Back

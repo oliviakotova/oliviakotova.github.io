@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import anastImg from "../public/assets/projects/anastasia_laptop.jpg";
-import krisImg from "../public/assets/projects/kristina.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
@@ -33,7 +32,7 @@ const anastasia = () => {
             </button> */}
           </a>
           <a
-            href="http://anastasia.oliviakotova.com/"
+            href="http://anastasiacosmetictattoo.com/"
             target="_blank"
             rel="noreferrer"
           >
