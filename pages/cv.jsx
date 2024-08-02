@@ -18,6 +18,7 @@ const cv = () => {
           <div className="max-w-[1240px] mx-auto p-10 grid md:grid-cols-5 gap-8 py-20">
             <div className="col-span-4 space-y-5">
               <h2 className="text-[hsl(217,56%,45%)]">OLIVIA KOTOVA</h2>
+
               <p>
                 <Link href="https://www.linkedin.com/in/olivia-kotova/">
                   <a
@@ -32,7 +33,7 @@ const cv = () => {
               </p>
               <p>
                 <a
-                  p="true"
+                  //p="true"
                   className="py-4 underline cursor-pointer text-[hsl(217,56%,45%)]"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -56,7 +57,7 @@ const cv = () => {
               </h3>
               <p>
                 Being full of energy I’m looking for employment in IT industry
-                as a Junior Developer. Having genuine interest in IT, began
+                as a Website Developer. Having genuine interest in IT, began
                 exploring deeply that area couple years ago to make a career
                 change. Aiming to achieve sufficient foundation to become a
                 professional I graduated at TAFE South Bank with Diploma in Web
@@ -65,8 +66,7 @@ const cv = () => {
                 (MongoDB) database, Bootstrap and tech principles and culture
                 via both team/individual projects, code reviews and
                 presentations. Looking to launch my career in tech after
-                graduating. I believe my passion in solving complex tasks by
-                applying modern IT solutions will be an asset to your company.
+                graduating.
               </p>
             </div>
             <div className="col-span-4 md:col-span-1 shadow-md  rounded-xl py-4">
@@ -123,8 +123,8 @@ const cv = () => {
             <div className="col-span-4 space-y-5">
               <h3 className="text-[hsl(217,56%,45%)] uppercase">Experience:</h3>
               <h4 className="text-[hsl(217,56%,45%)] pt-8">
-                Casual Photo Retoucher at Koshka Media Pty Ltd (Sydney,
-                Australia) — Sep 2019 - Present time
+                Graphic Designer and Photo Editor at Koshka Media Pty Ltd
+                (Sydney, Australia) — Sep 2019 - Present time
               </h4>
               <p>
                 <Link href="https://koshkamedia.com/">
@@ -143,8 +143,8 @@ const cv = () => {
                 give a hand when necessary by utilising my expertise and
                 knowledge in:
               </p>
-              <p>• Retouching wedding and family photos </p>
-              <p>• Image composition</p>
+              <p>• Photo Editing </p>
+              <p>• Image Composition</p>
               <p>
                 Builded a website{" "}
                 <Link href="https://koshkamedia.com/">
@@ -163,6 +163,38 @@ const cv = () => {
                 Development (html/ css/ js) and studied full- time at TAFE South
                 Bank towards Diploma in Web Development (2021-2022)
               </p>
+              <h4 className="text-[hsl(217,56%,45%)] pt-8">
+                Warehouse Manager (Brisbane, Australia) — Dec 2022 - Present
+                time
+              </h4>
+              <p>
+                <Link href="https://www.drummondgolf.com.au">
+                  <a
+                    p
+                    className="pr-2 underline cursor-pointer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Drummond Golf
+                  </a>
+                </Link>
+                is Australia's premier golf retailer for over 40 years, Drummond
+                Golf has been providing the largest range of the world's leading
+                golf brands at competitive prices to golfers of all levels and
+                ages.
+              </p>
+              <p>Responsibilities:</p>
+              <p>• Managing warehouse stock and warehouse database</p>
+              <p>• Dealing with suppliers</p>
+              <p>
+                • Recording the arrival of products using warehouse management
+                system
+              </p>
+              <p>
+                • Processing orders by incpecting quantaty, quality, checking
+                specs, cost, price, notifying customers
+              </p>
+
               <h4 className="text-[hsl(217,56%,45%)] pt-8">
                 Graphic Designer at Africa Studio (Mykolayiv, Ukraine) — Dec
                 2014 - Aug 2017
@@ -218,8 +250,15 @@ const cv = () => {
               <p>• Increased company’s standards of quality</p>
               <p>• Reduced the cost of design due to fast work</p>
               <a href="/cv.pdf" download="olivia_kotova_cv">
+                <h4 className="text-[hsl(217,56%,45%)] pt-8">
+                  References available upon request
+                </h4>
+                <h4 className="text-[hsl(217,56%,45%)] pt-8">
+                  Australian Citizen, full workink rights
+                </h4>
+
                 <p className="underline cursor-pointer hover:scale-10 ease-in pt-16 ">
-                  Download CV
+                  Download Olivia's CV
                 </p>
               </a>
 
