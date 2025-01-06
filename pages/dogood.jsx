@@ -17,25 +17,25 @@ const dogood = () => {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-6">
-          <h2 className="py-2">Volunteering App</h2>
-          <h3>React.js / Node.js / MongoDB</h3>
+          {/* <h2 className="py-2">Volunteering App</h2>*/}
+          {/* <h3>React.js / Node.js / MongoDB</h3>*/}
         </div>
       </div>
 
       <div className="max-w-[1240px] mx-auto p-6 grid md:grid-cols-5 gap-8 py-8">
         <div className="col-span-4">
-          <p>Project</p>
-          <h2>Overview</h2>
+          <p>Complite</p>
+          <h2> DO GOOD Volunteering App </h2>
           <p>
-            Do good volunteering app is a platform where people in need can
-            place their request of help and its details and volunteers who can
-            see that list of tasks in their local and willing to provide help in
-            their free time. User authentication is available so you can signup
-            or signin to your account with an email address and found volunteers
-            or people who need help.
+            Do good is a platform where people in need can place their request
+            of help and its details and volunteers who can see that list of
+            tasks in their local and willing to provide help in their free time.
+            User authentication is available so you can signup or signin to your
+            account with an email address and found volunteers or people who
+            need help.
           </p>
           <a
-            href="https://github.com/oliviakotova/do-good.git"
+            href="https://github.com/oliviakotova/do-good"
             target="_blank"
             rel="noreferrer"
           >

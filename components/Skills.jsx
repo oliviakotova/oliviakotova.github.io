@@ -17,6 +17,7 @@ import Bootstrap from "../public/assets/skills/bootstrap.png";
 import Tailwind from "../public/assets/skills/tailwind.png";
 import Photoshop from "../public/assets/skills/photoshop.png";
 import Wordpress from "../public/assets/skills/wordpress.png";
+import Shopify from "../public/assets/skills/shopify.png";
 
 const Skills = () => {
   return (
@@ -175,14 +176,14 @@ const Skills = () => {
               </div>
             </div>
           </a>
-          <a href="https://docs.docker.com/" target="_blank" rel="noreferrer">
+          <a href="https://www.shopify.com/" target="_blank" rel="noreferrer">
             <div className="p-6 shadow-md rounded-md hover:scale-105 ease-in duration-300 bg-gray-50">
               <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4 sm:grid-cols-2 justify-center items-center">
                 <div className="m-auto">
-                  <Image src={Docker} width="64px" height="64px" alt="/" />
+                  <Image src={Shopify} width="64px" height="64px" alt="/" />
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <h3>Docker</h3>
+                  <h3>Shopify</h3>
                 </div>
               </div>
             </div>
