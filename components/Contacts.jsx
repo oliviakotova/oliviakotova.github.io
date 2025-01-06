@@ -71,7 +71,7 @@ const Contacts = () => {
                 <p>Web Developer</p>
                 <p className="py-4">
                   I am available for freelance or full-time positions. Contact
-                  me and let&apos;s talk.
+                  me and let's talk.
                 </p>
               </div>
               <div>
@@ -123,30 +123,17 @@ const Contacts = () => {
           <div className="col-span-3 w-full h-auto shadow-md rounded-xl lg:p-4">
             <div className="p-4">
               <form>
-                <div className="grid md:grid-cols-2 gap-4 w-full py-2">
-                  <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">Name</label>
-                    <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
-                      type="text"
-                      name="name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                    />
-                  </div>
-                  <div className="flex flex-col">
-                    <label className="uppercase text-sm py-2">
-                      Phone Number
-                    </label>
-                    <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300"
-                      type="text"
-                      name="phone"
-                      value={phone}
-                      onChange={(e) => setPhone(e.target.value)}
-                    />
-                  </div>
+                <div className="flex flex-col py-2">
+                  <label className="uppercase text-sm py-2">Name</label>
+                  <input
+                    className="border-2 rounded-lg p-3 flex border-gray-300"
+                    type="text"
+                    name="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
                 </div>
+
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Email</label>
                   <input
@@ -157,16 +144,7 @@ const Contacts = () => {
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
-                <div className="flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Subject</label>
-                  <input
-                    className="border-2 rounded-lg p-3 flex border-gray-300"
-                    type="text"
-                    name="subject"
-                    value={subject}
-                    onChange={(e) => setSubject(e.target.value)}
-                  />
-                </div>
+
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea
@@ -184,7 +162,7 @@ const Contacts = () => {
                     handleSubmit(e);
                   }}
                 >
-                  Send Message
+                  SEND MESSAGE
                 </button>
               </form>
             </div>

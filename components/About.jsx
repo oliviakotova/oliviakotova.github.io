@@ -18,10 +18,10 @@ const About = () => {
             Web Developer. Having genuine interest in IT began exploring deeply
             that area couple years ago to make a career change. Aiming to
             achieve sufficient foundation to become a professional I graduated
-            at TAFE South Bank with Diploma in Web Development in Jul 2022 where
-            I gained hands-on experience with ReactJS, NodeJS, Git/GitHub, Data
+            at TAFE South Bank with Diploma in Web Development where I gained
+            hands-on experience with ReactJS, NodeJS, Git/GitHub, Data
             Structures, APIs, SQL and non SQL (MongoDB) databases, Drupal,
-            Wordpress, Bootstrap and tech principles and culture via both
+            Wordpress, Shopify, Bootstrap, tech principles and culture via both
             team/individual projects, code reviews and presentations.
           </p>
           <p className="py-2 text-gray-600"></p>
