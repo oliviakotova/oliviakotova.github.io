@@ -3,8 +3,16 @@ import React from "react";
 import carePulseImg from "../public/assets/projects/carepulse_b.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
+import PhotoSlider from "../components/PhotoSlider";
 
 const carepulse = () => {
+  const images = [
+    "/assets/carepulse_slider/photo1.jpg",
+    "/assets/carepulse_slider/photo2.2.jpeg",
+    "/assets/carepulse_slider/photo2.3.png",
+    "/assets/carepulse_slider/photo2.4.png",
+    // Add as many images as you need
+  ];
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -24,7 +32,10 @@ const carepulse = () => {
       <div className="max-w-[1240px] mx-auto p-6 grid md:grid-cols-5 gap-8 py-24">
         <div className="col-span-4">
           {/* <p>In progress</p> */}
-          <h2>Project: CarePulse, medical booking App </h2>
+          <h2>
+            Patient Management System with Next.js | Twilio, TypeScript,
+            TailwindCSS{" "}
+          </h2>
           {/* <p>bla-bla</p> */}
           <a
             href="https://github.com/oliviakotova/carepulse"
@@ -45,9 +56,10 @@ const carepulse = () => {
             </button>
           </a>
           <div>
-            <h3>Overview</h3>
+            <h3 className="py-4">Overview </h3>
+
             <p>
-              A healthcare patient management application that allows patients
+              CarePulse - a healthcare booking application that allows patients
               to easily register, book, and manage their appointments with
               doctors, featuring administrative tools for scheduling,
               confirming, and canceling appointments, along with SMS
@@ -55,7 +67,7 @@ const carepulse = () => {
             </p>
           </div>
           <div>
-            <h3>Features</h3>
+            <h3 className="py-4 mt-4 mr-8">Features</h3>
             <p>
               👉 Users can sign up and create a personal profile as a patient.
             </p>
@@ -126,10 +138,13 @@ const carepulse = () => {
         </div>
 
         <Link href="/#projects">
-          <p className="underline cursor-pointer hover:scale-110 ease-in duration-100">
+          <p className="underline cursor-pointer hover:scale-110 ease-in duration-100 mt-4 mr-8">
             Back
           </p>
         </Link>
+      </div>
+      <div className="container mx-auto py-12">
+        <PhotoSlider images={images} />
       </div>
     </div>
   );

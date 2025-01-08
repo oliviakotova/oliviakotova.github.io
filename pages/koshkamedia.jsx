@@ -29,22 +29,17 @@ const koshkamedia = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="px-8 py-2 mt-4 mr-8 hover:scale-110 ease-in duration-100">
-              Code
+            <button className=" underline py-8 mt-6 hover:scale-110 ease-in duration-100">
+              🚀 Visit KoshkaMedia Website
             </button>
           </a>
-          <a
-            href="https://koshkamedia.com.au/"
-            target="_blank"
-            rel="noreferrer"
-          ></a>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-md  rounded-xl py-4">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> WordPress
+                <RiRadioButtonFill className="pr-1" /> WordPress, Elementor
               </p>
             </div>
           </div>
