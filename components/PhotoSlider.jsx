@@ -3,77 +3,67 @@ import { useState, useEffect, useRef } from "react";
 const PhotoSlider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
-  const [transitioning, setTransitioning] = useState(false); // Flag for handling the loop transition
-  const intervalRef = useRef(null);
-  const sliderWidth = images.length * 100; // To calculate the width of the entire slider
+  const [isHovered, setIsHovered] = useState(false); // Track hover state
 
-  // Automatic slide effect
+  // Handle auto-sliding with pause/resume logic
   useEffect(() => {
-    if (isPaused) return; // Stop auto-sliding if paused
+    if (isPaused || isHovered) return; // Stop auto-sliding when paused or hovered
 
-    intervalRef.current = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); // Infinite loop using modulo
-    }, 3000); // Slide every 3 seconds
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); // Loop through images
+    }, 3000);
 
-    return () => clearInterval(intervalRef.current); // Clean up interval on unmount
-  }, [isPaused, images.length]);
+    return () => clearInterval(interval); // Clean up interval on unmount or when paused/hovered
+  }, [isPaused, isHovered, images.length]);
 
-  // Handle dot click
+  // Handle dot click to change image and pause the slider
   const handleDotClick = (index) => {
     setCurrentIndex(index);
-    setIsPaused(true); // Pause the slider when a dot is clicked
+    setIsPaused(true); // Pause on dot click
   };
 
-  // Handle image click to stop the sliding and resume after 5 seconds
+  // Handle image click to toggle pause/resume
   const handleImageClick = () => {
-    if (!isPaused) {
-      setIsPaused(true);
+    setIsPaused((prev) => !prev); // Toggle the state to pause/resume the slider
+  };
 
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current); // Clear interval on image click
-      }
+  // Stop sliding on hover
+  const handleMouseEnter = () => {
+    setIsHovered(true); // Set isHovered to true when mouse enters
+    setIsPaused(true); // Pause the slider on hover
+  };
 
-      setTimeout(() => setIsPaused(false), 5000); // Resume after 5 seconds
-    } else {
-      setIsPaused(false);
-    }
+  // Resume sliding when hover ends
+  const handleMouseLeave = () => {
+    setIsHovered(false); // Set isHovered to false when mouse leaves
+    setIsPaused(false); // Resume the slider when mouse leaves
   };
 
   // Navigate to the previous slide
   const prevSlide = () => {
     setCurrentIndex(
       (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    ); // Wrap around
+    );
   };
 
   // Navigate to the next slide
   const nextSlide = () => {
-    if (currentIndex === images.length - 1) {
-      setTransitioning(true); // Trigger transition when we reach the last slide
-    }
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length); // Wrap around
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-  // Reset the transition effect after the loop completes
-  useEffect(() => {
-    if (currentIndex === 0 && transitioning) {
-      setTimeout(() => {
-        setTransitioning(false); // Reset the transition flag after the loop finishes
-      }, 1000); // Match the duration of the transition (1000ms or 1 second)
-    }
-  }, [currentIndex, transitioning]);
-
   return (
-    <div className="relative w-full flex justify-center items-center flex-col">
-      {/* Image container with 80% of the viewport width */}
+    <div
+      className="relative flex justify-center items-center flex-col w-full"
+      onMouseEnter={handleMouseEnter} // Stop sliding on hover
+      onMouseLeave={handleMouseLeave} // Resume sliding when hover ends
+    >
+      {/* Image container with responsive width */}
       <div
-        className="relative w-[80vw] h-[60vh] md:h-[500px] overflow-hidden"
-        onClick={handleImageClick}
+        className="relative w-full h-[60vh] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] max-w-screen-xl overflow-hidden"
+        onClick={handleImageClick} // Toggle auto-sliding on click
       >
         <div
-          className={`absolute top-0 left-0 w-full h-full flex transition-transform duration-1000 ease-in-out ${
-            transitioning ? "transition-none" : "" // Disable transition during wraparound
-          }`}
+          className="absolute top-0 left-0 w-full h-full flex transition-transform duration-1000 ease-in-out"
           style={{
             transform: `translateX(-${currentIndex * 100}%)`, // Slide transition
           }}
@@ -83,22 +73,14 @@ const PhotoSlider = ({ images }) => {
               <img
                 src={src}
                 alt={`Slide ${index + 1}`}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain" // Ensures the whole image is visible without cropping
               />
             </div>
           ))}
-          {/* Duplicate the first image to simulate seamless loop */}
-          <div className="w-full h-full flex-shrink-0">
-            <img
-              src={images[0]}
-              alt={`Slide 1`}
-              className="w-full h-full object-contain"
-            />
-          </div>
         </div>
       </div>
 
-      {/* Left triangle for previous slide */}
+      {/* Left and Right arrows for manual navigation */}
       <button
         onClick={prevSlide}
         className="absolute left-[-50px] top-1/2 transform -translate-y-1/2 text-white text-3xl z-10 opacity-70 hover:opacity-100 transition-opacity duration-300 ease-in-out"
@@ -106,7 +88,6 @@ const PhotoSlider = ({ images }) => {
         &#9664;
       </button>
 
-      {/* Right triangle for next slide */}
       <button
         onClick={nextSlide}
         className="absolute right-[-50px] top-1/2 transform -translate-y-1/2 text-white text-3xl z-10 opacity-70 hover:opacity-100 transition-opacity duration-300 ease-in-out"
@@ -114,13 +95,13 @@ const PhotoSlider = ({ images }) => {
         &#9654;
       </button>
 
-      {/* Dots container placed below the entire slider */}
-      <div className="mt-4 w-full flex justify-center space-x-6">
+      {/* Dots navigation */}
+      <div className="mt-2 sm:mt-4 w-full flex justify-center space-x-6">
         {images.map((_, index) => (
           <button
             key={index}
             className={`h-2 w-2 rounded-full ${
-              currentIndex === index ? "bg-white" : "bg-gray-500"
+              currentIndex === index ? "bg-gray-700" : "bg-white"
             }`}
             onClick={() => handleDotClick(index)}
           />

@@ -15,18 +15,8 @@ const carepulse = () => {
   ];
   return (
     <div className="w-full">
-      <div className="w-screen h-[50vh] relative">
-        <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/10 z-10" />
-        <Image
-          className="absolute z-1"
-          layout="fill"
-          objectFit="cover"
-          src={carePulseImg}
-          alt="/"
-        />
-        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-6">
-          {/* <h2 className="py-2">Anastasia Cosmeting Tattooing</h2> */}
-        </div>
+      <div className="container mx-auto py-12">
+        <PhotoSlider images={images} />
       </div>
 
       <div className="max-w-[1240px] mx-auto p-6 grid md:grid-cols-5 gap-8 py-24">
@@ -142,9 +132,6 @@ const carepulse = () => {
             Back
           </p>
         </Link>
-      </div>
-      <div className="container mx-auto py-12">
-        <PhotoSlider images={images} />
       </div>
     </div>
   );
