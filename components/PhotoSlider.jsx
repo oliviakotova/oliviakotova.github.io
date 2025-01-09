@@ -59,7 +59,8 @@ const PhotoSlider = ({ images }) => {
     >
       {/* Image container with responsive width */}
       <div
-        className="relative w-full h-[60vh] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] max-w-screen-xl overflow-hidden"
+        className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[900px] max-w-screen-xl overflow-hidden mb-0 sm:mb-0 
+    " // Apply xs class for very small screens
         onClick={handleImageClick} // Toggle auto-sliding on click
       >
         <div
@@ -96,7 +97,9 @@ const PhotoSlider = ({ images }) => {
       </button>
 
       {/* Dots navigation */}
-      <div className="mt-2 sm:mt-4 w-full flex justify-center space-x-6">
+      <div className="mt-4 sm:mt-4 w-full flex justify-center space-x-6 sm:space-x-3">
+        {" "}
+        {/* Adjusted spacing for mobile */}
         {images.map((_, index) => (
           <button
             key={index}
