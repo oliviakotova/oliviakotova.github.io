@@ -11,7 +11,6 @@ const carepulse = () => {
     "/assets/carepulse_slider/photo2.2.jpeg",
     "/assets/carepulse_slider/photo2.3.png",
     "/assets/carepulse_slider/photo2.4.png",
-    // Add as many images as you need
   ];
   return (
     <div className="w-full">
