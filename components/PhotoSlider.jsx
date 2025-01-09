@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { useSwipeable } from "react-swipeable";
 
 const PhotoSlider = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -50,6 +51,12 @@ const PhotoSlider = ({ images }) => {
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
+  // Swipe handlers using react-swipeable
+  const swipeHandlers = useSwipeable({
+    onSwipedLeft: nextSlide,
+    onSwipedRight: prevSlide,
+    trackMouse: true, // Allow mouse tracking for swipe-like gestures on desktop
+  });
 
   return (
     <div
@@ -59,7 +66,7 @@ const PhotoSlider = ({ images }) => {
     >
       {/* Image container with responsive width */}
       <div
-        className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[900px] max-w-screen-xl overflow-hidden mb-0 sm:mb-0 
+        className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] max-w-screen-xl overflow-hidden mb-0 sm:mb-0 
     " // Apply xs class for very small screens
         onClick={handleImageClick} // Toggle auto-sliding on click
       >
@@ -80,21 +87,6 @@ const PhotoSlider = ({ images }) => {
           ))}
         </div>
       </div>
-
-      {/* Left and Right arrows for manual navigation */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-[-50px] top-1/2 transform -translate-y-1/2 text-white text-3xl z-10 opacity-70 hover:opacity-100 transition-opacity duration-300 ease-in-out"
-      >
-        &#9664;
-      </button>
-
-      <button
-        onClick={nextSlide}
-        className="absolute right-[-50px] top-1/2 transform -translate-y-1/2 text-white text-3xl z-10 opacity-70 hover:opacity-100 transition-opacity duration-300 ease-in-out"
-      >
-        &#9654;
-      </button>
 
       {/* Dots navigation */}
       <div className="mt-4 sm:mt-4 w-full flex justify-center space-x-6 sm:space-x-3">
