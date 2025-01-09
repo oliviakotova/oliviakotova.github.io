@@ -66,9 +66,9 @@ const PhotoSlider = ({ images }) => {
     >
       {/* Image container with responsive width */}
       <div
-        className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] max-w-screen-xl overflow-hidden mb-0 sm:mb-0 
-    " // Apply xs class for very small screens
-        onClick={handleImageClick} // Toggle auto-sliding on click
+        className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] max-w-screen-xl overflow-hidden mb-0 sm:mb-0"
+        onClick={handleImageClick}
+        {...swipeHandlers} // Add swipe handlers to the image container
       >
         <div
           className="absolute top-0 left-0 w-full h-full flex transition-transform duration-1000 ease-in-out"
