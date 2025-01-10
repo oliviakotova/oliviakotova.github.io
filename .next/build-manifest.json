@@ -25,10 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/carepulse": [
+    "/dogood": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/carepulse.js"
+      "static/chunks/pages/dogood.js"
     ]
   },
   "ampFirstPages": []
