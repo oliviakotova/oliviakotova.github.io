@@ -99,27 +99,6 @@ const carepulse = () => {
               performance and detect any errors.
             </p>
           </div>
-          {/* Video Section */}
-          <div className="my-8">
-            <h3 className=" mb-6"> Booking part video</h3>
-            <video
-              controls
-              className="w-full rounded-lg shadow-lg"
-              poster="/assets/carepulse_slider/phot01.jpg" // Thumbnail for the video
-            >
-              {/* Video Source */}
-              <source
-                src="/assets/carepulse_slider/appoint.mov"
-                type="video/quicktime"
-              />
-              {/* Provide MP4 fallback for wider compatibility */}
-              <source
-                src="/assets/carepulse_slider/appoint.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
-          </div>
         </div>
 
         {/* Right Column for Tech Stack */}
@@ -148,9 +127,37 @@ const carepulse = () => {
             </div>
           </div>
         </div>
-
+      </div>
+      {/* Video Section */}
+      <div className=" max-w-[1240px] mx-auto p-6 ">
+        <h3 className=" mb-6"> Booking part video</h3>
+        <video
+          controls
+          className="w-full rounded-lg shadow-lg"
+          poster="/assets/carepulse_slider/phot01.jpg" // Thumbnail for the video
+        >
+          {/* Video Source */}
+          <source
+            src="/assets/carepulse_slider/appoint.mov"
+            type="video/quicktime"
+          />
+          {/* Provide MP4 fallback for wider compatibility */}
+          <source src="/assets/carepulse_slider/appoint.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div className=" max-w-[1240px] mx-auto p-6 ">
+        <a
+          href="https://oliviakotova-ced1437fd5ca.herokuapp.com/carepulse_admin"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="underline py-8 mt-6 hover:scale-110 ease-in duration-100">
+            🚀 Visit CarePulse Admin Panel
+          </button>
+        </a>
         <Link href="/#projects">
-          <p className="underline cursor-pointer hover:scale-110 ease-in duration-100 mt-4 mr-8">
+          <p className="underline cursor-pointer hover:scale-110 ease-in duration-100 mt-4 text-right">
             Back
           </p>
         </Link>
