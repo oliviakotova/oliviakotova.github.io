@@ -7,14 +7,14 @@ import PhotoSlider from "../components/PhotoSlider";
 
 const dogood_admin = () => {
   const images = [
-    "/assets/carepulse_slider/photo1.jpg",
-    "/assets/carepulse_slider/photo1_cp.png",
-    "/assets/carepulse_slider/photo2_cp.png",
-    "/assets/carepulse_slider/photo3_cp.png",
-    "/assets/carepulse_slider/photo4_cp.png",
-    "/assets/carepulse_slider/photo5_cp.png",
-    "/assets/carepulse_slider/photo6_cp.png",
-    "/assets/carepulse_slider/photo7_cp.png",
+    "/assets/projects/admin_panel.png",
+    "/assets/dogood_adm/adm_dg1.png",
+    "/assets/dogood_adm/adm_dg2.png",
+    "/assets/dogood_adm/adm_dg3.png",
+
+    "/assets/dogood_adm/adm_dg5.png",
+    "/assets/dogood_adm/adm_dg6.png",
+    "/assets/dogood_adm/adm_dg7.png",
   ];
 
   return (
