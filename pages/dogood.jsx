@@ -7,14 +7,11 @@ import PhotoSlider from "../components/PhotoSlider";
 
 const dogood = () => {
   const images = [
-    "/assets/carepulse_slider/photo1.jpg",
-    "/assets/carepulse_slider/photo1_cp.png",
-    "/assets/carepulse_slider/photo2_cp.png",
-    "/assets/carepulse_slider/photo3_cp.png",
-    "/assets/carepulse_slider/photo4_cp.png",
-    "/assets/carepulse_slider/photo5_cp.png",
-    "/assets/carepulse_slider/photo6_cp.png",
-    "/assets/carepulse_slider/photo7_cp.png",
+    "/assets/projects/dogood_mobile.png",
+    "/assets/dogood_adm/dogood_1.png",
+    "/assets/dogood_adm/dogood_2.png",
+    "/assets/dogood_adm/dogood_3.png",
+    "/assets/dogood_adm/dogood_4.png",
   ];
 
   return (
@@ -103,7 +100,7 @@ const dogood = () => {
       </div>
       {/* Video Section */}
       <div className=" max-w-[1240px] mx-auto p-6 ">
-        <h3 className=" mb-6"> Booking part video</h3>
+        <h3 className=" mb-6"> swipes and messages</h3>
         <video
           controls
           className="w-full rounded-lg shadow-lg"
