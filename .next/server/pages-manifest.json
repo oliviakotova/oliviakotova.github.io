@@ -2,5 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/dogood_admin": "pages/dogood_admin.js"
+  "/koshkamedia": "pages/koshkamedia.js"
 }
