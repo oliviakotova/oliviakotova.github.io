@@ -25,10 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/dogood": [
+    "/dogood_admin": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/dogood.js"
+      "static/chunks/pages/dogood_admin.js"
     ]
   },
   "ampFirstPages": []
