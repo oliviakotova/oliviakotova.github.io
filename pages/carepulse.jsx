@@ -134,6 +134,7 @@ const carepulse = () => {
         <video
           controls
           className="w-full rounded-lg shadow-lg"
+          poster="/assets/carepulse_slider/phot01.jpg"
           preload="metadata"
         >
           <source src="/assets/carepulse_slider/appoint.mp4" type="video/mp4" />
