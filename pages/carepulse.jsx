@@ -129,23 +129,24 @@ const carepulse = () => {
         </div>
       </div>
       {/* Video Section */}
-      <div className=" max-w-[1240px] mx-auto p-6 ">
-        <h3 className=" mb-6"> Booking part video</h3>
+      <div className="max-w-[1240px] mx-auto p-6">
+        <h3 className="mb-6">Booking part video</h3>
         <video
           controls
           className="w-full rounded-lg shadow-lg"
-          poster="/assets/carepulse_slider/phot01.jpg" // Thumbnail for the video
+          poster="/assets/carepulse_slider/phot01.jpg"
+          preload="metadata"
         >
-          {/* Video Source */}
+          <source src="/assets/carepulse_slider/appoint.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
           <source
             src="/assets/carepulse_slider/appoint.mov"
             type="video/quicktime"
           />
-          {/* Provide MP4 fallback for wider compatibility */}
-          <source src="/assets/carepulse_slider/appoint.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
+
       <div className=" max-w-[1240px] mx-auto p-6 ">
         <a
           href="https://oliviakotova-ced1437fd5ca.herokuapp.com/carepulse_admin"
