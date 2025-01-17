@@ -37,7 +37,7 @@ const anastasia = () => {
             rel="noreferrer"
           >
             <button className="px-8 py-2 mt-4 hover:scale-110 ease-in duration-100">
-              Demo
+              🚀 Visit Website
             </button>
           </a>
         </div>

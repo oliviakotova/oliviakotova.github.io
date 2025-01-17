@@ -103,7 +103,7 @@ const dogood = () => {
         <video
           controls
           className="w-full rounded-lg shadow-lg"
-          poster="/assets/carepulse_slider/phot01.jpg" // Thumbnail for the video
+          poster="/assets/dogood_adm/dogood_3.png" // Thumbnail for the video
         >
           {/* Video Source */}
           <source src="/assets/dogood_adm/dogood.mov" type="video/quicktime" />
