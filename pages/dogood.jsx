@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import carePulseImg from "../public/assets/projects/carepulse_b.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import PhotoSlider from "../components/PhotoSlider";

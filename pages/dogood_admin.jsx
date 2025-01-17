@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import carePulseImg from "../public/assets/projects/carepulse_b.jpg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import PhotoSlider from "../components/PhotoSlider";
@@ -128,7 +127,7 @@ const dogood_admin = () => {
       </div>
       <div className=" max-w-[1240px] mx-auto p-6 ">
         <a
-          href="hhttps://dogood-client-c0dd5e308b90.herokuapp.com/"
+          href="https://dogood-client-c0dd5e308b90.herokuapp.com/"
           target="_blank"
           rel="noreferrer"
         >

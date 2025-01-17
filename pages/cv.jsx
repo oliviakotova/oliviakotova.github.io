@@ -161,11 +161,10 @@ const cv = () => {
               <p>
                 During this time I started exploring online tutorials for Web
                 Development (html/ css/ js) and studied full- time at TAFE South
-                Bank towards Diploma in Web Development (2021-2022)
+                Bank towards Diploma in Web Development
               </p>
               <h4 className="text-[hsl(217,56%,45%)] pt-8">
-                Warehouse Manager (Brisbane, Australia) — Dec 2022 - Present
-                time
+                Warehouse Manager (Brisbane, Australia) — Dec 2022 - Oct 2024
               </h4>
               <p>
                 <Link href="https://www.drummondgolf.com.au">
