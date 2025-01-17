@@ -1,11 +1,14 @@
 import Image from "next/image";
-import React from "react";
-import carePulseImg from "../public/assets/projects/carepulse_b.jpg";
+import React, { useState } from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import PhotoSlider from "../components/PhotoSlider";
+import koshWebp from "../public/assets/koshka/koshkamedia_webpage.png";
 
 const koshkamedia = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState("");
+
   const images = [
     "/assets/projects/koshkalaptop.jpg",
     "/assets/projects/koshkaldevices.jpg",
@@ -20,6 +23,16 @@ const koshkamedia = () => {
     "/assets/koshka/kosh_9.png",
     "/assets/koshka/kosh_10.png",
   ];
+
+  const openModal = (imageSrc) => {
+    setSelectedImage(imageSrc);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+    setSelectedImage("");
+  };
 
   return (
     <div className="w-full">
@@ -45,12 +58,9 @@ const koshkamedia = () => {
           <div>
             <h3 className="py-4">Overview </h3>
             <p>
-              Do good is a platform where people in need can place their request
-              of help and its details and volunteers who can see that list of
-              tasks in their local and willing to provide help in their free
-              time. User authentication is available so you can signup or
-              signing to your account with an email address and found volunteers
-              or people who need help.
+              A modern, fully responsive business website for Koshka Media Pty
+              Ltd built with WordPress and Elementor to provide an engaging user
+              experience and easy-to-navigate interface for potential customers.
             </p>
           </div>
 
@@ -58,58 +68,65 @@ const koshkamedia = () => {
             <h3 className="py-4 mt-4 mr-8">Features</h3>
             <p>
               👉 Users can sign up and create a personal profile as a volunteer
-              or person who need help.
+              or person who needs help.
             </p>
-            <p>
-              👉 Volunteer can see all people who need help and start
-              conversation/chat about time and place the help needed.
-            </p>
-            <p>
-              👉 Administrators have the ability to efficiently view, edit and
-              delete and create accounts or messages if needed.
-            </p>
+          </div>
+
+          <div className=" max-w-[1240px] mx-auto p-6 ">
+            <video
+              controls
+              className="w-full rounded-lg shadow-lg"
+              poster="/assets/projects/koshkaldevices.jpg" // Thumbnail for the video
+            >
+              <source src="/assets/koshka/koshka.mov" type="video/quicktime" />
+              <source src="/assets/koshka/koshka.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
 
         {/* Right Column for Tech Stack */}
         <div className="col-span-4 md:col-span-1 shadow-md rounded-xl py-4">
           <div className="p-2">
-            <p className="font-bold pb-2">Tech Stack</p>
-            <div className="grid grid-cols-2 md:grid-cols-1">
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Wordpress, Elementor
-              </p>
-            </div>
+            {/* Image clickable to open in full-screen modal */}
+            <Image
+              src="/assets/koshka/koshkamedia_webpage.png"
+              alt="Koshkamedia webpage"
+              width={300}
+              height={2300}
+              className="cursor-pointer rounded-lg shadow-lg"
+              onClick={() =>
+                openModal("/assets/koshka/koshkamedia_webpage.png")
+              }
+            />
           </div>
         </div>
       </div>
-      {/* Video Section */}
-      <div className=" max-w-[1240px] mx-auto p-6 ">
-        <h3 className=" mb-6"></h3>
-        <video
-          controls
-          className="w-full rounded-lg shadow-lg"
-          poster="/assets/projects/koshkaldevices.jpg" // Thumbnail for the video
+
+      {/* Modal for Fullscreen Image */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-70 z-50 flex justify-center items-center"
+          onClick={closeModal}
         >
-          {/* Video Source */}
-          <source src="/assets/koshka/koshka.mov" type="video/quicktime" />
-          {/* Provide MP4 fallback for wider compatibility */}
-          <source src="/assets/koshka/koshka.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div className=" max-w-[1240px] mx-auto p-6 ">
-        <a
-          href="https://dogood-admin-b1d5d0ac3f03.herokuapp.com/"
-          target="_blank"
-          rel="noreferrer"
-        ></a>
-        <Link href="/#projects">
-          <p className="underline cursor-pointer hover:scale-110 ease-in duration-100 mt-4 text-right">
-            Back
-          </p>
-        </Link>
-      </div>
+          <div className="relative">
+            <button
+              className="absolute top-4 right-4 text-white text-3xl"
+              onClick={closeModal}
+            >
+              ×
+            </button>
+            {/* Image inside modal */}
+            <Image
+              src={selectedImage}
+              alt="Fullscreen Image"
+              width={600} // No specific width, use w-full for scaling
+              height={3300} // No specific height, let it scale based on aspect ratio
+              className="w-full h-auto max-h-screen object-contain rounded-lg" // Full width, auto height, maintain aspect ratio
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
