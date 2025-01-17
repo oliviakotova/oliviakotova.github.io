@@ -126,7 +126,7 @@ const carepulse_admin = () => {
         <video
           controls
           className="w-full rounded-lg shadow-lg"
-          poster="/assets/carepulse_slider/phot01.jpg" // Thumbnail for the video
+          poster="/assets/carepulse_slider/aphoto3_cp.png" // Thumbnail for the video
         >
           {/* Video Source */}
           <source
