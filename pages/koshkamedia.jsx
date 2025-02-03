@@ -45,13 +45,9 @@ const koshkamedia = () => {
         <div className="col-span-4">
           <h2>Photography and Videography, Sydney Wordpress, Elementor</h2>
 
-          <a
-            href="hhttps://dogood-client-c0dd5e308b90.herokuapp.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://koshkamedia.com.au" target="_blank" rel="noreferrer">
             <button className="underline py-8 mt-6 hover:scale-110 ease-in duration-100">
-              🚀 Visit Website
+              🚀 Visit Wordpress Website
             </button>
           </a>
 

@@ -37,7 +37,7 @@ const dogood = () => {
             </button>
           </a>
           <a
-            href="hhttps://dogood-client-c0dd5e308b90.herokuapp.com/"
+            href="https://dogood-client-c0dd5e308b90.herokuapp.com"
             target="_blank"
             rel="noreferrer"
           >

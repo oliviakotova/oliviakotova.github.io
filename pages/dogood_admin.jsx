@@ -40,7 +40,7 @@ const dogood_admin = () => {
             </button>
           </a>
           <a
-            href="hhttps://dogood-client-c0dd5e308b90.herokuapp.com/"
+            href="https://dogood-admin-b1d5d0ac3f03.herokuapp.com/"
             target="_blank"
             rel="noreferrer"
           >
@@ -107,7 +107,7 @@ const dogood_admin = () => {
       <div className=" max-w-[1240px] mx-auto p-6 ">
         <h3 className=" mb-6">
           {" "}
-          admin can login with email-password;wiev all users; delete, update or
+          admin can login with email-password; view all users; delete, update or
           create user
         </h3>
         <video

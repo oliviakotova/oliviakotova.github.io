@@ -36,8 +36,8 @@ const diamonds = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="px-8 py-2 mt-4 hover:scale-110 ease-in duration-100">
-              Demo
+            <button className=" underline px-8 py-2 mt-4 hover:scale-110 ease-in duration-100">
+              🚀 Visit Shopify Website
             </button>
           </a>
         </div>
@@ -46,7 +46,7 @@ const diamonds = () => {
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-2 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Shopyfi
+                <RiRadioButtonFill className="pr-1" /> Shopify
               </p>
             </div>
           </div>
