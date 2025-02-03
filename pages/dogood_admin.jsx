@@ -26,7 +26,7 @@ const dogood_admin = () => {
         {/* Left Column for Text Content */}
         <div className="col-span-4">
           <h2>
-            Admin Panel for Volunteering Appication with MERN stack |
+            Admin Panel for Volunteering Application with MERN stack |
             Authentication | Cookies | Real Time Chat
           </h2>
 
