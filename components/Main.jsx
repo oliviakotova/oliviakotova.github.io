@@ -48,11 +48,11 @@ const Main = () => {
             >
               <AiOutlineMail />
             </button>
-            <Link href="/cv">
+            {/* <Link href="/cv">
               <div className="rounded-full shadow-md p-6 cursor-pointer hover:scale-150 ease-in duration-300 bg-gray-50 ">
                 <BsFillPersonLinesFill />
               </div>
-            </Link>
+            </Link>  */}
           </div>
         </div>
       </div>

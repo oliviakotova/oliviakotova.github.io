@@ -48,9 +48,7 @@ const cv = () => {
               <h3 className="text-[hsl(217,56%,45%)] uppercase pt-8">
                 Eucation:
               </h3>
-              <p>
-                Diploma in Website Development (TAFE South Bank, QLD) — Jul 2022
-              </p>
+              <p>Website Development Diploma(TAFE South Bank, QLD)</p>
 
               <h3 className="text-[hsl(217,56%,45%)] uppercase pt-8">
                 Summary
@@ -63,10 +61,9 @@ const cv = () => {
                 professional I graduated at TAFE South Bank with Diploma in Web
                 Development where I gained hands-on experience with JavaScript,
                 ReactJS, NodeJS, Data Structures, APIs, SQL and non SQL
-                (MongoDB) database, Bootstrap and tech principles and culture
-                via both team/individual projects, code reviews and
-                presentations. Looking to launch my career in tech after
-                graduating.
+                (MongoDB) database, Bootstrap, Wordpress and tech principles and
+                culture via both team/individual projects, code reviews and
+                presentations.
               </p>
             </div>
             <div className="col-span-4 md:col-span-1 shadow-md  rounded-xl py-4">
@@ -256,9 +253,9 @@ const cv = () => {
                   Australian Citizen, full workink rights
                 </h4>
 
-                <p className="underline cursor-pointer hover:scale-10 ease-in pt-16 ">
+                {/*  <p className="underline cursor-pointer hover:scale-10 ease-in pt-16 ">
                   Download Olivia's CV
-                </p>
+                </p> */}
               </a>
 
               <Link href="/#main">

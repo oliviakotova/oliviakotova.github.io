@@ -25,9 +25,9 @@ const About = () => {
             team/individual projects, code reviews and presentations.
           </p>
           <p className="py-2 text-gray-600"></p>
-          <Link href="/cv">
+          {/* <Link href="/cv">
             <p className="py-2 text-gray-600 underline cursor-pointer">my CV</p>
-          </Link>
+          </Link> */}
         </div>
         <div className="w-full h-auto m-auto shadow-md rounded-xl flex items-center justify-center p-4 bg-gray-50">
           {" "}

@@ -107,13 +107,13 @@ const Contacts = () => {
                   >
                     <AiOutlineMail />
                   </button>
-                  <Link href="/cv">
+                  {/* <Link href="/cv">
                     <a>
                       <div className="rounded-full shadow-md shadow-grey-200  p-6 cursor-pointer hover:scale-150 ease-in duration-300 bg-gray-50">
                         <BsFillPersonLinesFill />
                       </div>
                     </a>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             </div>
