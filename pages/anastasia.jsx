@@ -88,12 +88,12 @@ const anastasia = () => {
             {/* Image clickable to open in full-screen modal */}
             <Image
               src="/assets/anastasia/anastasia_webpage.png"
-              alt="Koshkamedia webpage"
+              alt="Anastasia full screen webpage"
               width={300}
               height={2300}
               className="cursor-pointer rounded-lg shadow-lg"
               onClick={() =>
-                openModal("/assets/koshka/koshkamedia_webpage.png")
+                openModal("/assets/anastasia/anastasia_webpage.png")
               }
             />
           </div>
@@ -106,7 +106,11 @@ const anastasia = () => {
           className="fixed inset-0 bg-black bg-opacity-70 z-50 flex justify-center items-center"
           onClick={closeModal}
         >
-          <div className="relative">
+          {/* Modal Content Wrapper */}
+          <div
+            className="relative max-h-[90vh] overflow-y-auto p-4"
+            onClick={(e) => e.stopPropagation()} // Prevent closing the modal when clicking inside
+          >
             <button
               className="absolute top-4 right-4 text-white text-3xl"
               onClick={closeModal}
