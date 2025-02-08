@@ -82,7 +82,7 @@ const dogood_admin = () => {
         </div>
 
         {/* Right Column for Tech Stack */}
-        <div className="col-span-4 md:col-span-1 shadow-md rounded-xl py-4">
+        <div className="col-span-4 md:col-span-1  bg-gray-50 shadow-md rounded-xl py-4">
           <div className="p-2">
             <p className="font-bold pb-2">Tech Stack</p>
             <div className="grid grid-cols-2 md:grid-cols-1">
@@ -112,7 +112,7 @@ const dogood_admin = () => {
         </h3>
         <video
           controls
-          className="w-full rounded-lg shadow-lg"
+          className="w-full rounded-lg shadow-lg  bg-gray-50"
           poster="/assets/dogood_adm/adm_dg3.png" // Thumbnail for the video
         >
           {/* Video Source */}
@@ -125,7 +125,7 @@ const dogood_admin = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className=" max-w-[1240px] mx-auto p-6 ">
+      <div className="max-w-[1240px] mx-auto p-6 flex justify-between items-center">
         <a
           href="https://dogood-client-c0dd5e308b90.herokuapp.com/"
           target="_blank"

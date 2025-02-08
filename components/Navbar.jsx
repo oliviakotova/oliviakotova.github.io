@@ -125,7 +125,7 @@ const Navbar = () => {
               <Link href="/">
                 <a>
                   <Image
-                    src="/../public/assets/logoblue-yellow.png"
+                    src="/../public/assets/logospiralsmall2.png"
                     width="55"
                     height="60"
                     alt="/"
@@ -197,9 +197,9 @@ const Navbar = () => {
                     <FaGithub />
                   </div>
                 </a>
-                <div className="rounded-full shadow-md shadow-gray-400 p-3.5 cursor-pointer hover:scale-150 ease-in duration-300">
+                {/* <div className="rounded-full shadow-md shadow-gray-400 p-3.5 cursor-pointer hover:scale-150 ease-in duration-300">
                   <BsFillPersonLinesFill />
-                </div>
+                </div>*/}
               </div>
             </div>
           </div>

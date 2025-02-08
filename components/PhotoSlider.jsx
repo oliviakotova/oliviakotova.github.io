@@ -66,7 +66,7 @@ const PhotoSlider = ({ images }) => {
     >
       {/* Image container with responsive width */}
       <div
-        className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] max-w-screen-xl overflow-hidden mb-0 sm:mb-0"
+        className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] max-w-screen-xl shadow-md  bg-gray-50 rounded-xl overflow-hidden mb-0 sm:mb-0"
         onClick={handleImageClick}
         {...swipeHandlers} // Add swipe handlers to the image container
       >

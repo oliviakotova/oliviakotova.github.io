@@ -19,7 +19,7 @@ const carepulse = () => {
 
   return (
     <div className="w-full">
-      <div className="container mx-auto py-12">
+      <div className="container mx-auto py-12 ">
         <PhotoSlider images={images} />
       </div>
 
@@ -46,7 +46,7 @@ const carepulse = () => {
             rel="noreferrer"
           >
             <button className="underline py-8 mt-6 hover:scale-110 ease-in duration-100">
-              🚀 Visit CarePulse App
+              🚀 Visit App
             </button>
           </a>
 
@@ -102,7 +102,7 @@ const carepulse = () => {
         </div>
 
         {/* Right Column for Tech Stack */}
-        <div className="col-span-4 md:col-span-1 shadow-md rounded-xl py-4">
+        <div className="col-span-4 md:col-span-1 shadow-md  bg-gray-50 rounded-xl py-4">
           <div className="p-2">
             <p className="font-bold pb-2">Tech Stack</p>
             <div className="grid grid-cols-2 md:grid-cols-1">
@@ -146,7 +146,7 @@ const carepulse = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className=" max-w-[1240px] mx-auto p-6 ">
+      <div className="max-w-[1240px] mx-auto p-6 flex justify-between items-center">
         <a
           href="https://oliviakotova-ced1437fd5ca.herokuapp.com/carepulse_admin"
           target="_blank"
@@ -156,9 +156,10 @@ const carepulse = () => {
             🚀 Visit CarePulse Admin Panel
           </button>
         </a>
+
         <Link href="/#projects">
-          <p className="underline cursor-pointer hover:scale-110 ease-in duration-100 mt-4 text-right">
-            Back
+          <p className="underline py-8 cursor-pointer hover:scale-110 transform origin-center ease-in duration-100 mt-6">
+            Back to Projects
           </p>
         </Link>
       </div>

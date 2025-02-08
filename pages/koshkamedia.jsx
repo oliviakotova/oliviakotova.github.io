@@ -43,7 +43,7 @@ const koshkamedia = () => {
       <div className="max-w-[1240px] mx-auto p-6 grid md:grid-cols-5 gap-8 py-24">
         {/* Left Column for Text Content */}
         <div className="col-span-4">
-          <h2>Photography and Videography, Sydney Wordpress, Elementor</h2>
+          <h2>Photography and Videography, Sydney - Wordpress, Elementor</h2>
 
           <a href="https://koshkamedia.com.au" target="_blank" rel="noreferrer">
             <button className="underline py-8 mt-6 hover:scale-110 ease-in duration-100">
@@ -62,10 +62,7 @@ const koshkamedia = () => {
 
           <div>
             <h3 className="py-4 mt-4 mr-8">Features</h3>
-            <p>
-              👉 Users can sign up and create a personal profile as a volunteer
-              or person who needs help.
-            </p>
+            <p>👉 Testtest</p>
           </div>
 
           <div className=" max-w-[1240px] mx-auto p-6 ">
@@ -123,6 +120,22 @@ const koshkamedia = () => {
           </div>
         </div>
       )}
+      <div className="max-w-[1240px] mx-auto p-6 flex justify-between items-center">
+        <a
+          href="https://oliviakotova-ced1437fd5ca.herokuapp.com/anastasia"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="underline py-8 mt-6 hover:scale-110 ease-in duration-100">
+            🚀 Visit Another Wordpress Website
+          </button>
+        </a>
+        <Link href="/#projects">
+          <p className="underline py-8 cursor-pointer hover:scale-110 transform origin-center ease-in duration-100 mt-6">
+            Back to Projects
+          </p>
+        </Link>
+      </div>
     </div>
   );
 };
