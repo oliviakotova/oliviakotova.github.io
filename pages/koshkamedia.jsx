@@ -103,10 +103,7 @@ const koshkamedia = () => {
           onClick={closeModal}
         >
           {/* Modal Content Wrapper */}
-          <div
-            className="relative max-h-[90vh] overflow-y-auto p-4"
-            onClick={(e) => e.stopPropagation()} // Prevent closing the modal when clicking inside
-          >
+          <div className="relative max-h-[90vh] overflow-y-auto p-4">
             <button
               className="absolute top-4 right-4 text-white text-3xl"
               onClick={closeModal}

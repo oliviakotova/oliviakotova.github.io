@@ -8,6 +8,7 @@ import carePulseImg from "../public/assets/projects/carepulse_d.jpg";
 import diamImg from "../public/assets/projects/diamonds_b.png";
 import portfImg from "../public/assets/projects/portfolio.png";
 import admcareImg from "../public/assets/projects/admin_care.png";
+import wellbImg from "../public/assets/projects/wellbeing_devices.jpg";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Project from "./Project";
 
@@ -62,6 +63,12 @@ const Projects = () => {
             backgroundImg={diamImg}
             projectUrl="/diamonds"
             tech="Shopify"
+          />
+          <Project
+            title="Well-Being Space"
+            backgroundImg={wellbImg}
+            projectUrl="/wellbeingspace"
+            tech="Squarespace"
           />
           <Project
             title="Personal Website"
