@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-// import krisImg from "../public/assets/projects/kristina.png";
 import Image from "next/image";
 
 const Project = ({ title, backgroundImg, tech, projectUrl }) => {

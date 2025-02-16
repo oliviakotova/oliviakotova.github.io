@@ -88,14 +88,12 @@ const diamonds = () => {
           <div className="p-2">
             {/* Image clickable to open in full-screen modal */}
             <Image
-              src="/assets/wellbeing/wellbeingspace_webpage.png"
+              src="/assets/diamonds/diamonds_webpage.png"
               alt="Wellbeing webpage"
               width={300}
-              height={700}
+              height={1300}
               className="cursor-pointer rounded-lg shadow-lg"
-              onClick={() =>
-                openModal("/assets/wellbeing/wellbeingspace_webpage.png")
-              }
+              onClick={() => openModal("/assets/diamonds/diamonds_webpage.png")}
             />
           </div>
         </div>
