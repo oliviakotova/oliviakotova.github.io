@@ -1,29 +1,32 @@
-export default function (req, res) {
-  require("dotenv").config();
+import nodemailer from "nodemailer";
 
-  let nodemailer = require("nodemailer");
-  const transporter = nodemailer.createTransport({
-    port: 465,
-    host: "smtp.gmail.com",
-    auth: {
-      user: "demo email",
-      pass: process.env.password,
-    },
-    secure: true,
-  });
+export default async function handler(req, res) {
+  if (req.method === "POST") {
+    const { name, email, message } = req.body;
 
-  const mailData = {
-    from: "demo email",
-    to: "oliviatestportfolio.gmail.com",
-    subject: `Message From ${req.body.name}`,
-    text: req.body.message + " | Sent from: " + req.body.email,
-    html: `<div>${req.body.message}</div><p>Sent from:
-    ${req.body.email}</p>`,
-  };
-  transporter.sendMail(mailData, function (err, info) {
-    if (err) console.log(err);
-    else console.log(info);
-  });
-  res.status(200);
-  console.log(req.body);
+    const transporter = nodemailer.createTransport({
+      service: "gmail", // Use appropriate service
+      auth: {
+        user: process.env.EMAIL_USER, // Email account
+        pass: process.env.EMAIL_PASS, // Email password or app-specific password
+      },
+    });
+
+    const mailOptions = {
+      from: email,
+      to: process.env.EMAIL_USER, // Your email where the form data will be sent
+      subject: `Message from ${name}`,
+      text: message,
+      html: `<p>Message from: ${name}</p><p>Email: ${email}</p><p>${message}</p>`,
+    };
+
+    try {
+      await transporter.sendMail(mailOptions);
+      res.status(200).json({ message: "Message sent successfully!" });
+    } catch (error) {
+      res.status(500).json({ error: "Failed to send the message." });
+    }
+  } else {
+    res.status(405).json({ error: "Method Not Allowed" });
+  }
 }
