@@ -1,8 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { useRouter } from "next/router";
 import LogoNav from "../public/assets/logospiralsmall3.png";
@@ -12,6 +11,7 @@ const Navbar = () => {
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
   const [linkColor, setLinkColor] = useState("#1f2937");
+  const [isDarkMode, setIsDarkMode] = useState(false); // Track the dark mode state
   const router = useRouter();
 
   useEffect(() => {
@@ -28,6 +28,31 @@ const Navbar = () => {
       setLinkColor("#1f2937");
     }
   }, [router]);
+
+  // Toggle theme
+  const toggleTheme = () => {
+    const newTheme = !isDarkMode;
+    setIsDarkMode(newTheme);
+    if (newTheme) {
+      document.documentElement.classList.add("dark"); // Add 'dark' class to the root element
+    } else {
+      document.documentElement.classList.remove("dark"); // Remove 'dark' class
+    }
+  };
+
+  useEffect(() => {
+    // Check for saved theme preference in localStorage and apply it on load
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      setIsDarkMode(true);
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
+
+  useEffect(() => {
+    // Save the theme preference in localStorage
+    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+  }, [isDarkMode]);
 
   const mobileNav = () => {
     setNav(!nav);
@@ -67,7 +92,7 @@ const Navbar = () => {
             </a>
           </div>
         </Link>
-        <div>
+        <div className="flex items-center">
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-d cursor-pointer hover:scale-110 ease-in duration-300">
@@ -90,20 +115,24 @@ const Navbar = () => {
                 Skills
               </li>
             </Link>
-            {/* <Link href="/#contact">
-              <li className="ml-10 text-sm uppercase hover:border-b cursor-pointer hover:scale-110 ease-in duration-300">
-                Contact
-              </li>
-            </Link> */}
           </ul>
+
+          {/* Add theme toggle button */}
+          <button
+            onClick={toggleTheme}
+            className="ml-10 text-sm uppercase cursor-pointer"
+          >
+            {isDarkMode ? "Light Mode" : "Dark Mode"}
+          </button>
+
+          {/* Mobile Menu Toggle */}
           <div onClick={mobileNav} className="md:hidden">
             <AiOutlineMenu size={29} />
           </div>
         </div>
       </div>
 
-      {/* ------------- Mobile Menu ------------- */}
-      {/*overlay under side menu*/}
+      {/* Mobile Menu */}
       <div
         className={
           nav
@@ -139,9 +168,6 @@ const Navbar = () => {
                 <AiOutlineClose />
               </div>
             </div>
-            <div className="border-b border-gray-300 my-4">
-              <p className="w-[85%] md:w-[90%] py-4"></p>
-            </div>
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
@@ -172,35 +198,12 @@ const Navbar = () => {
               </Link>
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#4382e8]">
-                {/* Let's Connect */}
-              </p>
-              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <a
-                  href="https://www.linkedin.com/in/olivia-kotova"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className="rounded-full shadow-md shadow-gray-400 p-3.5 cursor-pointer hover:scale-150 ease-in duration-300">
-                    <FaLinkedinIn />
-                  </div>
-                </a>
-                <div className="rounded-full shadow-md shadow-gray-400 p-3.5 cursor-pointer hover:scale-150 ease-in duration-300">
-                  <AiOutlineMail />
-                </div>
-                <a
-                  href="https://github.com/oliviakotova"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <div className="rounded-full shadow-md shadow-gray-400 p-3.5 cursor-pointer hover:scale-150 ease-in duration-300">
-                    <FaGithub />
-                  </div>
-                </a>
-                {/* <div className="rounded-full shadow-md shadow-gray-400 p-3.5 cursor-pointer hover:scale-150 ease-in duration-300">
-                  <BsFillPersonLinesFill />
-                </div>*/}
-              </div>
+              <button
+                onClick={toggleTheme}
+                className="uppercase tracking-widest text-[#4382e8]"
+              >
+                {isDarkMode ? "Light Mode" : "Dark Mode"}
+              </button>
             </div>
           </div>
         </div>

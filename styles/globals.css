@@ -1,3 +1,4 @@
+/* globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,33 +10,52 @@ html {
   font-family: "Raleway", sans-serif;
 }
 
-@layer base {
-  body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
-  }
+/* Light mode (default) */
+body {
+  @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-bold;
-  }
+h1 {
+  @apply text-4xl sm:text-5xl md:text-6xl;
+}
+h2 {
+  @apply text-2xl sm:text-2xl;
+}
 
-  h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl;
-  }
+li {
+  @apply cursor-pointer;
+}
 
-  h2 {
-    @apply text-2xl sm:text-2xl;
-  }
+/* button {
+  @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#4382e8] to-[#1373c7] text-white;
+} */
 
-  li {
-    @apply cursor-pointer;
-  }
+/* Dark mode styles */
+.dark body {
+  @apply bg-[#121212] text-[#ffffff];
+}
 
-  /* button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#4382e8] to-[#1373c7] text-white;
-  } */
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  @apply text-white;
+}
+
+.dark li {
+  @apply text-white;
+}
+
+.dark a {
+  @apply text-white;
 }
