@@ -9,20 +9,45 @@ const About = () => {
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-[#4382e8]">
-            About
+            About me
           </p>
-          <h2 className="py-4">Who I Am</h2>
-          <p className="py-2 text-gray-600"></p>
+
+          <p className="py-2 text-gray-600 md:font-bold">
+            Hello, I’m Olivia – a creative and driven Web Developer with a
+            passion for crafting intuitive digital experiences.
+          </p>
           <p className="py-2 text-gray-600">
-            Being full of energy I’m looking for employment in IT industry as a
-            Web Developer. Having genuine interest in IT began exploring deeply
-            that area couple years ago to make a career change. Aiming to
-            achieve sufficient foundation to become a professional I graduated
-            at TAFE South Bank with Diploma in Web Development where I gained
-            hands-on experience with ReactJS, NodeJS, Git/GitHub, Data
-            Structures, APIs, SQL and non SQL (MongoDB) databases, Drupal,
-            Wordpress, Shopify, Bootstrap, tech principles and culture via both
-            team/individual projects, code reviews and presentations.
+            With a background in Mechanical Engineering, I honed my
+            problem-solving skills and ranked at the top of my class during my
+            Master’s. Although I was offered a promising engineering role, I
+            decided to follow my true passion for design. This led me to spend
+            over five years as a Graphic Designer in Ukraine, where my work was
+            recognised for its high quality and strong impact on performance
+            metrics—often exceeding sales targets.
+          </p>
+          <p className="py-2 text-gray-600">
+            My genuine interest in technology and innovation eventually steered
+            me toward web development. I pursued a Diploma in Web Development at
+            TAFE South Bank, where I gained practical expertise in ReactJS,
+            NodeJS, Git/GitHub, APIs, SQL/NoSQL (MongoDB), and popular platforms
+            like Drupal, WordPress, and Shopify.
+          </p>
+          <p className="py-2 text-gray-600">
+            {" "}
+            In addition to my education, I’ve worked as a freelance web
+            developer and remote photo retoucher, delivering digital solutions
+            that are both creative and functional.{" "}
+          </p>
+          <p className="py-2 text-gray-600">
+            I’m now ready to bring my diverse skill set—combining technical
+            expertise with a keen design eye—into the role of Junior Web
+            Developer. My goal is to create user-centric, impactful websites
+            that blend innovation with seamless functionality.
+          </p>
+          <p className="py-2 text-gray-600">
+            {" "}
+            Let’s connect and bring your vision to life with cutting-edge web
+            development solutions.
           </p>
           <p className="py-2 text-gray-600"></p>
           {/* <Link href="/cv">
