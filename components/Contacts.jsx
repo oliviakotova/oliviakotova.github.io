@@ -91,13 +91,6 @@ const Contacts = () => {
         </div>
         {/* Scroll to top button */}
         <div className="absolute bottom-0  py-32  right-40 ">
-          {/* <Link href="/">
-            <a>
-              <div className="rounded-full shadow-md p-6  cursor-pointer animate-bounce hover:animate-none hover:scale-110 ease-in duration-600 bg-gray-50">
-                <FaAngleDoubleUp />
-              </div>
-            </a>
-          </Link>*/}
           <ScrollToTopLink />
         </div>
       </div>

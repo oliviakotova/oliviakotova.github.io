@@ -1,21 +1,14 @@
+import { Link } from "react-scroll";
 import { FaAngleDoubleUp } from "react-icons/fa";
 
 const ScrollToTopLink = () => {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
   return (
-    <div className="absolute bottom-0 left-30 ">
-      <div
-        onClick={scrollToTop} // Trigger scroll to top on click
-        className="rounded-full shadow-md p-6 cursor-pointer animate-bounce hover:animate-none hover:scale-110 ease-in duration-600 bg-gray-50"
-      >
-        <FaAngleDoubleUp />
-      </div>
+    <div className="absolute bottom-10 left-10">
+      <Link to="home" smooth={true} duration={1800} offset={-70}>
+        <div className="rounded-full shadow-md p-6 cursor-pointer animate-bounce hover:animate-none hover:scale-110 ease-in-out duration-700 bg-gray-50">
+          <FaAngleDoubleUp />
+        </div>
+      </Link>
     </div>
   );
 };
