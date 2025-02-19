@@ -1,11 +1,17 @@
 import Link from "next/link";
 import React from "react";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaEnvelope,
+  FaAngleDoubleDown,
+} from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { HiChevronDoubleDown } from "react-icons/hi";
 import useDownloader from "react-use-downloader";
 import { useRouter } from "next/router";
+import ScrollToNext from "./ScrolltoNext";
 
 const Main = () => {
   const router = useRouter();
@@ -42,38 +48,30 @@ const Main = () => {
                 <FaGithub />
               </div>
             </a>
-            <button
-              className="rounded-full shadow-md p-6 cursor-pointer hover:scale-150 ease-in duration-300 bg-gray-50"
+            <a
               onClick={() => router.push("mailto:olivia.kotova@hotmail.com")}
+              target="_blank"
+              rel="noreferrer"
             >
-              <AiOutlineMail />
-            </button>
-            {/* <Link href="/cv">
-              <div className="rounded-full shadow-md p-6 cursor-pointer hover:scale-150 ease-in duration-300 bg-gray-50 ">
-                <BsFillPersonLinesFill />
+              <div className="rounded-full shadow-md p-6 cursor-pointer hover:scale-150 ease-in duration-300 bg-gray-50">
+                <FaEnvelope />
               </div>
-            </Link>  */}
+            </a>
           </div>
         </div>
       </div>
-      <div className="absolute bottom-10 right-10">
+      {/* <div className="absolute bottom-10 right-10 cursor-pointer animate-bounce hover:animate-none hover:scale-110 ease-in duration-600">
         <Link href="/#about">
           <a>
-            <div className="rounded-full shadow-md p-4 cursor-pointer hover:scale-150 ease-in duration-300">
-              <svg
-                className="animate-bounce w-6 h-6 text-gray-900"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-              </svg>
+            <div className="rounded-full shadow-md p-6   bg-gray-50">
+              <FaAngleDoubleDown />
+              <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
             </div>
           </a>
         </Link>
+      </div>*/}
+      <div>
+        <ScrollToNext />
       </div>
     </div>
   );

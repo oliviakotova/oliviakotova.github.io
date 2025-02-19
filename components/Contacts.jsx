@@ -4,10 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaEnvelope,
+  FaAngleDoubleUp,
+} from "react-icons/fa";
 import ContactImg from "../public/assets/contact.jpg";
 import { useRouter } from "next/router";
 import ContactForm from "../components/ContactForm"; // Import the ContactForm component
+import ScrollToTopLink from "./ScrollToTop";
 
 const Contacts = () => {
   const router = useRouter();
@@ -59,14 +66,17 @@ const Contacts = () => {
                       <FaGithub />
                     </div>
                   </a>
-                  <button
-                    className="rounded-full shadow-md shadow-grey-200 p-6 cursor-pointer hover:scale-150 ease-in duration-300 bg-gray-50"
+                  <a
                     onClick={() =>
                       router.push("mailto:olivia.kotova@hotmail.com")
                     }
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    <AiOutlineMail />
-                  </button>
+                    <div className="rounded-full shadow-md p-6 cursor-pointer hover:scale-150 ease-in duration-300 bg-gray-50">
+                      <FaEnvelope />
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -74,32 +84,21 @@ const Contacts = () => {
 
           {/* Right side - Contact Form */}
           <div className="col-span-3 w-full h-auto shadow-md rounded-xl lg:p-4">
-            <div className="p-4">
-              {/* Render the ContactForm component here */}
+            <div className="py-16">
               <ContactForm />
             </div>
           </div>
         </div>
-
         {/* Scroll to top button */}
-        <div className="absolute bottom-0 right-10">
-          <Link href="/">
+        <div className="absolute bottom-0  py-32  right-40 ">
+          {/* <Link href="/">
             <a>
-              <div className="rounded-full shadow-md p-4 cursor-pointer hover:scale-150 ease-in duration-300 ">
-                <svg
-                  className="animate-bounce w-6 h-6 text-gray-900"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
-                </svg>
+              <div className="rounded-full shadow-md p-6  cursor-pointer animate-bounce hover:animate-none hover:scale-110 ease-in duration-600 bg-gray-50">
+                <FaAngleDoubleUp />
               </div>
             </a>
-          </Link>
+          </Link>*/}
+          <ScrollToTopLink />
         </div>
       </div>
     </div>

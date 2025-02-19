@@ -35,7 +35,7 @@ const Navbar = () => {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
     } else {
-      setNavBg(isDarkMode ? "#1f2937" : "#ecf0f3");
+      setNavBg(isDarkMode ? "#353d49" : "#ecf0f3");
       setLinkColor(isDarkMode ? "#ecf0f3" : "#1f2937");
     }
   }, [router, isDarkMode]); // Add isDarkMode as dependency

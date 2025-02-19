@@ -12,14 +12,14 @@ const Project = ({ title, backgroundImg, tech, projectUrl }) => {
         alt="/"
       />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
-        <h3 className="text-2xl text-white tracking-wider text-center">
+        <h2 className="text-2xl text-white tracking-wider text-center">
           {title}
-        </h3>
+        </h2>
         <p className="pb-4 pt-2 text-white text-center">{tech}</p>
         <Link href={projectUrl}>
-          <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer hover:scale-105 ease-in duration-300">
+          <h3 className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer hover:scale-105 ease-in duration-300">
             More Info
-          </p>
+          </h3>
         </Link>
       </div>
     </div>

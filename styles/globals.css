@@ -40,12 +40,19 @@ li {
 
 /* Dark mode styles */
 .dark body {
-  @apply bg-[#1f2937] text-[#bdc5cb];
+  @apply bg-[#353d49] text-[#bdc5cb];
 }
 
-.dark h1,
-.dark h2,
-.dark h3,
+.dark h1 {
+  @apply text-[#bdc5cb];
+}
+
+.dark h2 {
+  @apply text-[#bdc5cb];
+}
+.dark h3 {
+  @apply text-[#1f2937];
+}
 .dark h4,
 .dark h5,
 .dark h6 {
@@ -57,5 +64,9 @@ li {
 }
 
 .dark a {
+  @apply text-[#1f2937];
+}
+
+.dark p {
   @apply text-[#bdc5cb];
 }
