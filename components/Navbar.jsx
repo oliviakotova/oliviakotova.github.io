@@ -125,7 +125,7 @@ const Navbar = () => {
           {/* Add theme toggle button */}
           <button
             onClick={toggleTheme}
-            className="ml-10 text-sm uppercase cursor-pointer"
+            className="ml-10 text-sm uppercase cursor-pointer hidden sm:block"
           >
             {isDarkMode ? "Light Mode" : "Dark Mode"}
           </button>
@@ -149,7 +149,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-300 dark:bg-[#333333] dark:text-white" // Dark background for mobile menu
+              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-300 dark:bg-[#353d49] dark:text-white" // Dark background for mobile menu
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
@@ -205,7 +205,7 @@ const Navbar = () => {
             <div className="pt-40">
               <button
                 onClick={toggleTheme}
-                className="uppercase tracking-widest text-[#4382e8]"
+                className="uppercase tracking-widest text-sm"
               >
                 {isDarkMode ? "Light Mode" : "Dark Mode"}
               </button>
