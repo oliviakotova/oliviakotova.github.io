@@ -125,7 +125,7 @@ const Navbar = () => {
           {/* Add theme toggle button */}
           <button
             onClick={toggleTheme}
-            className="ml-10 text-sm uppercase cursor-pointer hidden sm:block"
+            className="ml-10 text-sm uppercase cursor-pointer hidden md:block"
           >
             {isDarkMode ? "Light Mode" : "Dark Mode"}
           </button>
