@@ -26,13 +26,7 @@ const Navbar = () => {
       setLinkColor("#1f2937");
     }
 
-    if (
-      router.asPath === "/kristina" ||
-      router.asPath === "/dogood" ||
-      router.asPath === "/dogood_admin" ||
-      router.asPath === "/portfolio"
-    ) {
-      setNavBg("transparent");
+    if (router.asPath === "/kristina") {
       setLinkColor("#ecf0f3");
     } else {
       setNavBg(isDarkMode ? "#353d49" : "#ecf0f3");

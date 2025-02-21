@@ -82,6 +82,18 @@ const koshkamedia = () => {
               Your browser does not support the video tag.
             </video>
           </div>
+          <div className="max-w-[1240px] mx-auto p-6 flex justify-between items-center">
+            <Link href="/anastasia">
+              <p className="underline cursor-pointer py-8 mt-6 hover:scale-110 ease-in duration-100">
+                🚀 Visit Another Wordpress Website
+              </p>
+            </Link>
+            <Link href="/#projects">
+              <p className="underline py-8 cursor-pointer hover:scale-110 transform origin-center ease-in duration-100 mt-6">
+                Back to Projects
+              </p>
+            </Link>
+          </div>
         </div>
 
         {/* Right Column for Tech Stack */}
@@ -127,18 +139,6 @@ const koshkamedia = () => {
           </div>
         </div>
       )}
-      <div className="max-w-[1240px] mx-auto p-6 flex justify-between items-center">
-        <Link href="/anastasia">
-          <p className="underline cursor-pointer py-8 mt-6 hover:scale-110 ease-in duration-100">
-            🚀 Visit Another Wordpress Website
-          </p>
-        </Link>
-        <Link href="/#projects">
-          <p className="underline py-8 cursor-pointer hover:scale-110 transform origin-center ease-in duration-100 mt-6">
-            Back to Projects
-          </p>
-        </Link>
-      </div>
     </div>
   );
 };

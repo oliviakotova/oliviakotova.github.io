@@ -34,10 +34,6 @@ li {
   @apply cursor-pointer;
 }
 
-/* button {
-  @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#4382e8] to-[#1373c7] text-white;
-} */
-
 /* Dark mode styles */
 .dark body {
   @apply bg-[#353d49] text-[#bdc5cb];

@@ -41,20 +41,20 @@ const diamonds = () => {
       <div className="max-w-[1240px] mx-auto p-6 grid md:grid-cols-5 gap-8 py-24">
         {/* Left Column for Text Content */}
         <div className="col-span-4">
-          <h2>Jewelry Store, Brisbane - Shopify</h2>
+          <h2 className="py-4">Jewelry Store, Brisbane - Shopify</h2>
 
-          <a
-            href="https://hvzanj-1c.myshopify.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="underline py-8 mt-6 hover:scale-110 ease-in duration-100">
+          <Link href="https://hvzanj-1c.myshopify.com" passHref>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline cursor-pointer  py-8 mt-6 hover:scale-110 ease-in duration-100 projects-link"
+            >
               🚀 Visit Shopify Website
-            </button>
-          </a>
+            </a>
+          </Link>
 
           <div>
-            <h3 className="py-4">Overview </h3>
+            <h4 className="py-4">Overview </h4>
             <p>
               A modern, fully responsive business website for O&A Diamonds built
               with Shopify to provide an engaging user experience and
@@ -63,7 +63,7 @@ const diamonds = () => {
           </div>
 
           <div>
-            <h3 className="py-4 mt-4 mr-8">Features</h3>
+            <h4 className="py-4 mt-4 mr-8">Features</h4>
             <p>👉 Testtest</p>
           </div>
 

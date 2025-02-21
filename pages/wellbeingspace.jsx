@@ -42,20 +42,20 @@ const wellbeingspace = () => {
       <div className="max-w-[1240px] mx-auto p-6 grid md:grid-cols-5 gap-8 py-24">
         {/* Left Column for Text Content */}
         <div className="col-span-4">
-          <h2>WELLBEING COUNSELLING, Sydney - Squarespace</h2>
+          <h2 className="py-4"> WELLBEING COUNSELLING, Sydney - Squarespace</h2>
 
-          <a
-            href="https://www.wellbeingspace.com.au"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="underline py-8 mt-6 hover:scale-110 ease-in duration-100">
+          <Link href="https://www.wellbeingspace.com.au" passHref>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline cursor-pointer  py-8 mt-6 hover:scale-110 ease-in duration-100 projects-link"
+            >
               🚀 Visit Squarespace Website
-            </button>
-          </a>
+            </a>
+          </Link>
 
           <div>
-            <h3 className="py-4">Overview </h3>
+            <h4 className="py-4">Overview </h4>
             <p>
               A modern, fully responsive business website for Wellbeing Space
               built with Squarespace to provide an engaging user experience and
@@ -64,7 +64,7 @@ const wellbeingspace = () => {
           </div>
 
           <div>
-            <h3 className="py-4 mt-4 mr-8">Features</h3>
+            <h4 className="py-4 mt-4 mr-8">Features</h4>
             <p>👉 Testtest</p>
           </div>
 

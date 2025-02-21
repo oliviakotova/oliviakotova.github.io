@@ -1,9 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import PhotoSlider from "../components/PhotoSlider";
-import koshWebp from "../public/assets/koshka/koshkamedia_webpage.png";
 
 const anastasia = () => {
   const [isOpen, setIsOpen] = useState(false);
