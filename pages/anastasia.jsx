@@ -40,20 +40,21 @@ const anastasia = () => {
         {/* Left Column for Text Content */}
         <div className="col-span-4">
           <p>In progress</p>
-          <h2>Anastasia Cosmeting Tattooing - Wordpress, Elementor</h2>
-
-          <a
-            href="http://anastasiacosmetictattoo.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="underline py-8 mt-6 hover:scale-110 ease-in duration-100">
+          <h2 className="py-4">
+            Anastasia Cosmeting Tattooing - Wordpress, Elementor
+          </h2>
+          <Link href="http://anastasiacosmetictattoo.com/" passHref>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline cursor-pointer  py-8 mt-6 hover:scale-110 ease-in duration-100 projects-link"
+            >
               🚀 Visit Wordpress Website
-            </button>
-          </a>
+            </a>
+          </Link>
 
           <div>
-            <h3 className="py-4">Overview </h3>
+            <h4 className="py-4">Overview </h4>
             <p>
               A modern, fully responsive business website for Koshka Media Pty
               Ltd built with WordPress and Elementor to provide an engaging user
@@ -62,7 +63,7 @@ const anastasia = () => {
           </div>
 
           <div>
-            <h3 className="py-4 mt-4 mr-8">Features</h3>
+            <h4 className="py-4 mt-4 mr-8">Features</h4>
             <p>👉 Testtest</p>
           </div>
 
@@ -79,6 +80,18 @@ const anastasia = () => {
               <source src="/assets/anastasia/anast.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+          </div>
+          <div className="max-w-[1240px] mx-auto p-6 flex justify-between items-center">
+            <Link href="/koshkamedia">
+              <p className="underline cursor-pointer py-8 mt-6 hover:scale-110 ease-in duration-100 ">
+                🚀 Visit Another Wordpress Website
+              </p>
+            </Link>
+            <Link href="/#projects">
+              <p className="underline py-8 cursor-pointer hover:scale-110 transform origin-center ease-in duration-100 mt-6 ">
+                Back to Projects
+              </p>
+            </Link>
           </div>
         </div>
 
@@ -125,20 +138,6 @@ const anastasia = () => {
           </div>
         </div>
       )}
-      <div className="max-w-[1240px] mx-auto p-6 flex justify-between items-center">
-        <a
-          href="https://oliviakotova-ced1437fd5ca.herokuapp.com/anastasia"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="underline py-8 mt-6 hover:scale-110 ease-in duration-100"></button>
-        </a>
-        <Link href="/#projects">
-          <p className="underline py-8 cursor-pointer hover:scale-110 transform origin-center ease-in duration-100 mt-6">
-            Back to Projects
-          </p>
-        </Link>
-      </div>
     </div>
   );
 };

@@ -24,33 +24,34 @@ const carepulse_admin = () => {
 
       <div className="max-w-[1240px] mx-auto p-6 grid md:grid-cols-5 gap-8 py-24">
         {/* Left Column for Text Content */}
-        <div className="col-span-4">
+        <div className="col-span-4 flex flex-wrap gap-8">
           <h2>
             Admin Panel for Medical Booking App with Next.js | Twilio,
             TypeScript, TailwindCSS, SMS Notifications{" "}
           </h2>
 
-          <a
-            href="https://github.com/oliviakotova/carepulse"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="underline px-8 py-2 mt-4 mr-8 hover:scale-110 ease-in duration-100">
+          <Link href="https://github.com/oliviakotova/carepulse" passHref>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" underline cursor-pointer px-8 mt-4 hover:scale-110 ease-in duration-100 projects-link"
+            >
               ⚙️ GitHub
-            </button>
-          </a>
-          <a
-            href="https://carepulse-five-rho.vercel.app"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="underline py-8 mt-6 hover:scale-110 ease-in duration-100">
+            </a>
+          </Link>
+
+          <Link href="https://carepulse-five-rho.vercel.app" passHref>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline cursor-pointer px-8 mt-4 hover:scale-110 ease-in duration-100 projects-link"
+            >
               🚀 Visit CarePulse Admin App
-            </button>
-          </a>
+            </a>
+          </Link>
 
           <div>
-            <h3 className="py-4">Overview </h3>
+            <h4 className="py-4">Overview </h4>
             <p>
               CarePulse Admin Panel - admin page for healthcare booking
               application that has featuring administrative tools for
@@ -60,7 +61,7 @@ const carepulse_admin = () => {
           </div>
 
           <div>
-            <h3 className="py-4 mt-4 mr-8">Features</h3>
+            <h4 className="py-4 mt-4 mr-8">Features</h4>
 
             <p>
               👉 Administrators can efficiently view and handle all scheduled
@@ -90,7 +91,7 @@ const carepulse_admin = () => {
         </div>
 
         {/* Right Column for Tech Stack */}
-        <div className="col-span-4 md:col-span-1 shadow-md  bg-gray-50 rounded-xl py-4">
+        <div className="col-span-4 md:col-span-1 shadow-md   rounded-xl py-4">
           <div className="p-2">
             <p className="font-bold pb-2">Tech Stack</p>
             <div className="grid grid-cols-2 md:grid-cols-1">
@@ -118,11 +119,11 @@ const carepulse_admin = () => {
       </div>
       {/* Video Section */}
       <div className=" max-w-[1240px] mx-auto p-6 ">
-        <h3 className=" mb-6">
+        <h4 className=" mb-6">
           {" "}
           Admin canceled and sheduled appointments,sms sent automatically to the
           patient
-        </h3>
+        </h4>
         <video
           controls
           className="w-full rounded-lg shadow-lg"
@@ -138,16 +139,13 @@ const carepulse_admin = () => {
           Your browser does not support the video tag.
         </video>
       </div>
+
       <div className="max-w-[1240px] mx-auto p-6 flex justify-between items-center">
-        <a
-          href="https://oliviakotova-ced1437fd5ca.herokuapp.com/carepulse"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="underline py-8 mt-6 hover:scale-110 ease-in duration-100">
-            🚀 Visit CarePulse Booking App
-          </button>
-        </a>
+        <Link href="/carepulse">
+          <p className="underline cursor-pointer py-8 mt-6 hover:scale-110 ease-in duration-100">
+            🚀 Visit CarePulse App
+          </p>
+        </Link>
         <Link href="/#projects">
           <p className="underline py-8 cursor-pointer hover:scale-110 transform origin-center ease-in duration-100 mt-6">
             Back to Projects

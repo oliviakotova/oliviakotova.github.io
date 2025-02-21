@@ -21,33 +21,36 @@ const dogood = () => {
 
       <div className="max-w-[1240px] mx-auto p-6 grid md:grid-cols-5 gap-8 py-24">
         {/* Left Column for Text Content */}
-        <div className="col-span-4">
+        <div className="col-span-4 flex flex-wrap gap-8">
           <h2>
             Volunteering Appication with MERN stack | Authentication | Cookies |
             Real Time Chat
           </h2>
-
-          <a
-            href="https://github.com/oliviakotova/do-good"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="underline px-8 py-2 mt-4 mr-8 hover:scale-110 ease-in duration-100">
+          <Link href="https://github.com/oliviakotova/do-good" passHref>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" underline cursor-pointer px-8 mt-4 hover:scale-110 ease-in duration-100 projects-link"
+            >
               ⚙️ GitHub
-            </button>
-          </a>
-          <a
+            </a>
+          </Link>
+
+          <Link
             href="https://dogood-client-c0dd5e308b90.herokuapp.com"
-            target="_blank"
-            rel="noreferrer"
+            passHref
           >
-            <button className="underline py-8 mt-6 hover:scale-110 ease-in duration-100">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline cursor-pointer px-8 mt-4 hover:scale-110 ease-in duration-100 projects-link"
+            >
               🚀 Visit DoGood App
-            </button>
-          </a>
+            </a>
+          </Link>
 
           <div>
-            <h3 className="py-4">Overview </h3>
+            <h4 className="py-4">Overview </h4>
             <p>
               Do good is a platform where people in need can place their request
               of help and its details and volunteers who can see that list of
@@ -59,7 +62,7 @@ const dogood = () => {
           </div>
 
           <div>
-            <h3 className="py-4 mt-4 mr-8">Features</h3>
+            <h4 className="py-4 mt-4 mr-8">Features</h4>
             <p>
               👉 Users can sign up and create a personal profile as a volunteer
               or person who need help.
@@ -76,7 +79,7 @@ const dogood = () => {
         </div>
 
         {/* Right Column for Tech Stack */}
-        <div className="col-span-4 md:col-span-1 shadow-md  bg-gray-50 rounded-xl py-4">
+        <div className="col-span-4 md:col-span-1 shadow-md  rounded-xl py-4">
           <div className="p-2">
             <p className="font-bold pb-2">Tech Stack</p>
             <div className="grid grid-cols-2 md:grid-cols-1">
@@ -99,7 +102,7 @@ const dogood = () => {
       </div>
       {/* Video Section */}
       <div className=" max-w-[1240px] mx-auto p-6 ">
-        <h3 className=" mb-6"> swipes and messages</h3>
+        <h4 className=" mb-6"> swipes and messages</h4>
         <video
           controls
           className="w-full rounded-lg shadow-lg"
@@ -113,15 +116,11 @@ const dogood = () => {
         </video>
       </div>
       <div className="max-w-[1240px] mx-auto p-6 flex justify-between items-center">
-        <a
-          href="https://dogood-admin-b1d5d0ac3f03.herokuapp.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="underline py-8 mt-6 hover:scale-110 ease-in duration-100">
+        <Link href="/dogood_admin">
+          <p className="underline cursor-pointer py-8 mt-6 hover:scale-110 ease-in duration-100">
             🚀 Visit DoGood Admin Panel
-          </button>
-        </a>
+          </p>
+        </Link>
         <Link href="/#projects">
           <p className="underline py-8 cursor-pointer hover:scale-110 transform origin-center ease-in duration-100 mt-6">
             Back to Projects

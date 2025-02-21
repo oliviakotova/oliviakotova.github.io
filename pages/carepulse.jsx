@@ -25,33 +25,33 @@ const carepulse = () => {
 
       <div className="max-w-[1240px] mx-auto p-6 grid md:grid-cols-5 gap-8 py-24">
         {/* Left Column for Text Content */}
-        <div className="col-span-4">
+        <div className="col-span-4 flex flex-wrap gap-8">
           <h2>
             Patient Management System with Next.js | Twilio, TypeScript,
             TailwindCSS{" "}
           </h2>
-
-          <a
-            href="https://github.com/oliviakotova/carepulse"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="underline px-8 py-2 mt-4 mr-8 hover:scale-110 ease-in duration-100">
+          <Link href="https://github.com/oliviakotova/carepulse" passHref>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" underline cursor-pointer px-8 mt-4 hover:scale-110 ease-in duration-100 projects-link"
+            >
               ⚙️ GitHub
-            </button>
-          </a>
-          <a
-            href="https://carepulse-five-rho.vercel.app"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button className="underline py-8 mt-6 hover:scale-110 ease-in duration-100">
+            </a>
+          </Link>
+
+          <Link href="https://carepulse-five-rho.vercel.app" passHref>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline cursor-pointer px-8 mt-4 hover:scale-110 ease-in duration-100 projects-link"
+            >
               🚀 Visit App
-            </button>
-          </a>
+            </a>
+          </Link>
 
           <div>
-            <h3 className="py-4">Overview </h3>
+            <h4 className="py-4">Overview </h4>
             <p>
               CarePulse - a healthcare booking application that allows patients
               to easily register, book, and manage their appointments with
@@ -62,7 +62,7 @@ const carepulse = () => {
           </div>
 
           <div>
-            <h3 className="py-4 mt-4 mr-8">Features</h3>
+            <h4 className="py-4 mt-4 mr-8">Features</h4>
             <p>
               👉 Users can sign up and create a personal profile as a patient.
             </p>
@@ -102,9 +102,9 @@ const carepulse = () => {
         </div>
 
         {/* Right Column for Tech Stack */}
-        <div className="col-span-4 md:col-span-1 shadow-md  bg-gray-50 rounded-xl py-4">
+        <div className="col-span-4 md:col-span-1 shadow-md  rounded-xl py-4">
           <div className="p-2">
-            <p className="font-bold pb-2">Tech Stack</p>
+            <h4 className="font-bold pb-2">Tech Stack</h4>
             <div className="grid grid-cols-2 md:grid-cols-1">
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Next.js
@@ -130,7 +130,7 @@ const carepulse = () => {
       </div>
       {/* Video Section */}
       <div className=" max-w-[1240px] mx-auto p-6 ">
-        <h3 className=" mb-6"> Booking part video</h3>
+        <h4 className=" mb-6"> Booking part video</h4>
         <video
           controls
           className="w-full rounded-lg shadow-lg"
@@ -147,15 +147,11 @@ const carepulse = () => {
         </video>
       </div>
       <div className="max-w-[1240px] mx-auto p-6 flex justify-between items-center">
-        <a
-          href="https://oliviakotova-ced1437fd5ca.herokuapp.com/carepulse_admin"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="underline py-8 mt-6 hover:scale-110 ease-in duration-100">
+        <Link href="/carepulse_admin">
+          <p className="underline cursor-pointer py-8 mt-6 hover:scale-110 ease-in duration-100">
             🚀 Visit CarePulse Admin Panel
-          </button>
-        </a>
+          </p>
+        </Link>
 
         <Link href="/#projects">
           <p className="underline py-8 cursor-pointer hover:scale-110 transform origin-center ease-in duration-100 mt-6">

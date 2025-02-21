@@ -70,3 +70,7 @@ li {
 .dark p {
   @apply text-[#bdc5cb];
 }
+
+.dark .projects-link {
+  @apply text-[#bdc5cb];
+}

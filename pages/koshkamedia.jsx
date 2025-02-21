@@ -43,16 +43,22 @@ const koshkamedia = () => {
       <div className="max-w-[1240px] mx-auto p-6 grid md:grid-cols-5 gap-8 py-24">
         {/* Left Column for Text Content */}
         <div className="col-span-4">
-          <h2>Photography and Videography, Sydney - Wordpress, Elementor</h2>
+          <h2 className="py-4">
+            Photography and Videography, Sydney - Wordpress, Elementor
+          </h2>
 
-          <a href="https://koshkamedia.com.au" target="_blank" rel="noreferrer">
-            <button className="underline py-8 mt-6 hover:scale-110 ease-in duration-100">
+          <Link href="https://koshkamedia.com.au" passHref>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline cursor-pointer  py-8 mt-6 hover:scale-110 ease-in duration-100 projects-link"
+            >
               🚀 Visit Wordpress Website
-            </button>
-          </a>
+            </a>
+          </Link>
 
           <div>
-            <h3 className="py-4">Overview </h3>
+            <h4 className="py-4">Overview </h4>
             <p>
               A modern, fully responsive business website for Koshka Media Pty
               Ltd built with WordPress and Elementor to provide an engaging user
@@ -61,7 +67,7 @@ const koshkamedia = () => {
           </div>
 
           <div>
-            <h3 className="py-4 mt-4 mr-8">Features</h3>
+            <h4 className="py-4 mt-4 mr-8">Features</h4>
             <p>👉 Testtest</p>
           </div>
 
@@ -122,15 +128,11 @@ const koshkamedia = () => {
         </div>
       )}
       <div className="max-w-[1240px] mx-auto p-6 flex justify-between items-center">
-        <a
-          href="https://oliviakotova-ced1437fd5ca.herokuapp.com/anastasia"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="underline py-8 mt-6 hover:scale-110 ease-in duration-100">
+        <Link href="/anastasia">
+          <p className="underline cursor-pointer py-8 mt-6 hover:scale-110 ease-in duration-100">
             🚀 Visit Another Wordpress Website
-          </button>
-        </a>
+          </p>
+        </Link>
         <Link href="/#projects">
           <p className="underline py-8 cursor-pointer hover:scale-110 transform origin-center ease-in duration-100 mt-6">
             Back to Projects
