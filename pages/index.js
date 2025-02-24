@@ -11,11 +11,13 @@ export default function Home() {
       <Head>
         <title>Olivia Kotova | Web Developer</title>
         <meta
-          name="description"
+          name="portfolio"
           content="Explore my web development portfolio featuring projects built with JavaScript, Next.js, Node.js, Tailwind CSS, WordPress, Shopify, and Squarespace. Discover innovative solutions and creative designs."
         />
 
         <link rel="icon" href="/fav.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#000000" />
       </Head>
       <Main />
       <About />
