@@ -97,7 +97,7 @@ const ContactForm = () => {
 
           <button
             type="submit"
-            className="w-full p-4 text-gray-100 mt-4 cursor-pointer hover:scale-105 ease-in duration-300 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#4382e8] to-[#1373c7]"
+            className="w-full p-4 text-gray-100 mt-4 cursor-pointer hover:scale-105 ease-in duration-300 shadow-xl shadow-gray-400 dark:shadow-[#353d49] rounded-xl uppercase bg-gradient-to-r from-[#4382e8] to-[#1373c7]"
             disabled={status?.loading}
           >
             {status?.loading ? (

@@ -54,9 +54,7 @@ const portfolio = () => {
 
       <div className="max-w-[1240px] mx-auto p-6 flex justify-between items-center">
         <Link href="/carepulse_admin">
-          <p className="underline cursor-pointer py-8 mt-6 hover:scale-110 ease-in duration-100">
-            🚀 Visit CarePulse Admin Panel
-          </p>
+          <p className="underline cursor-pointer py-8 mt-6 hover:scale-110 ease-in duration-100"></p>
         </Link>
 
         <Link href="/#projects">
