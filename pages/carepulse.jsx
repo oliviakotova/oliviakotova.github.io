@@ -133,6 +133,8 @@ const carepulse = () => {
         <h4 className=" mb-6"> Booking part video</h4>
         <video
           controls
+          preload="metadata"
+          loading="lazy"
           className="w-full rounded-lg shadow-lg"
           poster="/assets/carepulse_slider/photo5_cp.png" // Thumbnail for the video
         >

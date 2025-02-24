@@ -115,6 +115,8 @@ const dogood_admin = () => {
         </h4>
         <video
           controls
+          preload="metadata"
+          loading="lazy"
           className="w-full rounded-lg shadow-lg  bg-gray-50"
           poster="/assets/dogood_adm/adm_dg3.png" // Thumbnail for the video
         >

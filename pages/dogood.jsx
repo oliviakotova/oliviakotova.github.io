@@ -105,6 +105,8 @@ const dogood = () => {
         <h4 className=" mb-6"> swipes and messages</h4>
         <video
           controls
+          preload="metadata"
+          loading="lazy"
           className="w-full rounded-lg shadow-lg"
           poster="/assets/dogood_adm/dogood_3.png" // Thumbnail for the video
         >

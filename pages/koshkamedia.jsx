@@ -74,6 +74,8 @@ const koshkamedia = () => {
           <div className=" max-w-[1240px] mx-auto p-6 ">
             <video
               controls
+              preload="metadata"
+              loading="lazy"
               className="w-full rounded-lg shadow-lg"
               poster="/assets/projects/koshkaldevices.jpg" // Thumbnail for the video
             >

@@ -126,6 +126,8 @@ const carepulse_admin = () => {
         </h4>
         <video
           controls
+          preload="metadata"
+          loading="lazy"
           className="w-full rounded-lg shadow-lg"
           poster="/assets/carepulse_slider/aphoto3_cp.png" // Thumbnail for the video
         >

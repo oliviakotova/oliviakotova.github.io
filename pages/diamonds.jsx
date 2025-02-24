@@ -70,6 +70,8 @@ const diamonds = () => {
           <div className=" max-w-[1240px] mx-auto p-6 ">
             <video
               controls
+              preload="metadata"
+              loading="lazy"
               className="w-full rounded-lg shadow-lg"
               poster="/assets/diamonds/ahopi-3.png" // Thumbnail for the video
             >
