@@ -15,6 +15,15 @@ import ScrollToNext from "./ScrolltoNext";
 
 const Main = () => {
   const router = useRouter();
+  const email = process.env.NEXT_PUBLIC_EMAIL;
+  const handleEmailClick = () => {
+    if (email) {
+      router.push(`mailto:${email}`);
+    } else {
+      console.error("Email is not available");
+    }
+  };
+
   return (
     <div id="home" className=" w-full h-screen text-center">
       <div className=" relative max-w-[1240px] w-full h-full mx-auto  flex justify-center items-center">
@@ -48,11 +57,8 @@ const Main = () => {
                 <FaGithub />
               </div>
             </a>
-            <a
-              onClick={() => router.push("mailto:olivia.kotova@hotmail.com")}
-              target="_blank"
-              rel="noreferrer"
-            >
+
+            <a onClick={handleEmailClick} target="_blank" rel="noreferrer">
               <div className="rounded-full shadow-md p-6 cursor-pointer hover:scale-150 ease-in duration-300 bg-gray-50">
                 <FaEnvelope />
               </div>

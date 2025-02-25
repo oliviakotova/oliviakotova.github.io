@@ -16,6 +16,14 @@ import ScrollToTopLink from "./ScrollToTop";
 
 const Contacts = () => {
   const router = useRouter();
+  const email = process.env.NEXT_PUBLIC_EMAIL;
+  const handleEmailClick = () => {
+    if (email) {
+      router.push(`mailto:${email}`);
+    } else {
+      console.error("Email is not available");
+    }
+  };
 
   return (
     <div id="contact" className="w-full lg:h-screen ">
@@ -65,9 +73,7 @@ const Contacts = () => {
                     </div>
                   </a>
                   <a
-                    onClick={() =>
-                      router.push("mailto:olivia.kotova@hotmail.com")
-                    }
+                    onClick={handleEmailClick}
                     target="_blank"
                     rel="noreferrer"
                   >
