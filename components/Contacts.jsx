@@ -1,5 +1,3 @@
-// pages/Contacts.jsx
-
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -20,15 +18,15 @@ const Contacts = () => {
   const router = useRouter();
 
   return (
-    <div id="contact" className="w-full lg:h-screen">
-      <div className="relative max-w-[1240px] m-auto px-6 py-16 w-full">
+    <div id="contact" className="w-full lg:h-screen ">
+      <div className="relative max-w-[1240px] m-auto px-6 py-16 w-full rounded-lg ">
         <p className="text-xl tracking-widest uppercase text-[#4382e8]">
           Contact
         </p>
         <h2 className="py-4">Get In Touch</h2>
-        <div className="grid lg:grid-cols-5 gap-8">
+        <div className="grid lg:grid-cols-5 gap-8 ">
           {/* Left side */}
-          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-md rounded-xl p-4">
+          <div className="col-span-3 lg:col-span-2 w-full h-full shadow-md rounded-xl p-4 ">
             <div className="lg:p-4 h-full">
               <div>
                 <Image
@@ -84,13 +82,12 @@ const Contacts = () => {
 
           {/* Right side - Contact Form */}
           <div className="col-span-3 w-full h-auto shadow-md rounded-xl lg:p-4">
-            <div className="py-16">
-              <ContactForm />
-            </div>
+            <ContactForm />
           </div>
         </div>
-        {/* Scroll to top button */}
-        <div className="absolute bottom-0  py-32  right-40 ">
+      </div>
+      <div className="py-32 ">
+        <div className="relative flex justify-end right-0">
           <ScrollToTopLink />
         </div>
       </div>
