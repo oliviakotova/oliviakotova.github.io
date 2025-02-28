@@ -34,6 +34,19 @@ li {
   @apply cursor-pointer;
 }
 
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 5s linear infinite; /* Slow down the spin by increasing the time */
+}
+
 /* Dark mode styles */
 .dark body {
   @apply bg-[#353d49] text-[#bdc5cb];

@@ -1,12 +1,19 @@
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import About from "../components/About";
 import Main from "../components/Main";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contacts from "../components/Contacts";
-import ScrollToTopLink from "../components/ScrollToTop";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+
+  // Hide loading spinner after the page has mounted
+  useEffect(() => {
+    setLoading(false); // Once the page has mounted, stop showing the spinner
+  }, []);
   return (
     <div>
       <Head>
@@ -20,6 +27,8 @@ export default function Home() {
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#000000" />
       </Head>
+      {/* Show the spinner if the page is still loading */}
+      {loading && <LoadingSpinner />}
 
       <Main />
       <About />
