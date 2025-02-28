@@ -150,21 +150,25 @@ const Navbar = () => {
           <div>
             <div className="flex w-full items-center justify-between">
               {/* Mobile Logo */}
+
               <Link href="/">
-                <a>
-                  <Image
-                    src="/../public/assets/logospiralsmall2.png"
-                    width="55"
-                    height="60"
-                    alt="/"
-                  />
-                </a>
+                <div className="pt-2.5">
+                  <a>
+                    <Image
+                      src={LogoNav}
+                      alt="/"
+                      width="70"
+                      height="75"
+                      className="cursor-pointer"
+                    />
+                  </a>
+                </div>
               </Link>
               <div
                 onClick={mobileNav}
-                className="rounded-full shadow-md shadow-gray-400 p-3.5 hover:scale-110 cursor-pointer"
+                className="rounded-full shadow-md p-6 cursor-pointer hover:scale-120 ease-in duration-300 bg-gray-50"
               >
-                <AiOutlineClose />
+                <AiOutlineClose className=" dark:text-[#1f2937]" />
               </div>
             </div>
           </div>
