@@ -38,3 +38,8 @@ Thumbs.db
 
 # npm package-lock files 
 package-lock.json
+
+build/
+dist/
+.idea/
+.vscode/
