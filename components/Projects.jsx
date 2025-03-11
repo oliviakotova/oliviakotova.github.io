@@ -9,6 +9,7 @@ import diamImg from "../public/assets/projects/diamonds_dev.png";
 import portfImg from "../public/assets/projects/portfolio.png";
 import admcareImg from "../public/assets/projects/admin_care.png";
 import wellbImg from "../public/assets/projects/wellbeing_devices.jpg";
+import chatImg from "../public/assets/projects/chat_bot_proj.png";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import Project from "./Project";
 
@@ -75,6 +76,12 @@ const Projects = () => {
             backgroundImg={portfImg}
             projectUrl="/portfolio"
             tech="Nextjs, TailwindCSS"
+          />
+          <Project
+            title="AI Chatbot"
+            backgroundImg={chatImg}
+            projectUrl="/chatbot"
+            tech="React.js, CSS & Google Gemini API"
           />
         </div>
         {/* <div className="flex justify-center py-12">
