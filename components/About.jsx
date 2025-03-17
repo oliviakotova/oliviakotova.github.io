@@ -17,7 +17,7 @@ const About = () => {
             passion for crafting intuitive digital experiences.
           </p>
           <p className="py-2 text-gray-600">
-            With a background in Graphic Mechanical Engineering, I honed my
+            With a background in Mechanical Engineering, I honed my
             problem-solving skills and ranked at the top of my class during my
             Master’s. Although I was offered a promising engineering role, I
             decided to follow my true passion for design. This led me to spend
