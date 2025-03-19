@@ -44,7 +44,8 @@ const koshkamedia = () => {
         {/* Left Column for Text Content */}
         <div className="col-span-4">
           <h2 className="py-4">
-            Photography and Videography, Sydney - Wordpress, Elementor
+            Photography and Videography, Sydney - Custom WordPress Website Built
+            with Elementor
           </h2>
 
           <Link href="https://koshkamedia.com.au" passHref>
@@ -60,9 +61,12 @@ const koshkamedia = () => {
           <div>
             <h4 className="py-4">Overview </h4>
             <p>
-              A modern, fully responsive business website for Koshka Media Pty
-              Ltd built with WordPress and Elementor to provide an engaging user
-              experience and easy-to-navigate interface for potential customers.
+              For this project, I designed and developed a fully customized
+              WordPress website using Elementor, ensuring a modern and
+              user-friendly experience. The goal was to create a fresh,
+              optimized website while seamlessly integrating the existing client
+              database from the company's previous site to retain customer
+              relationships and business continuity.
             </p>
           </div>
 
