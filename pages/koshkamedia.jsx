@@ -71,8 +71,23 @@ const koshkamedia = () => {
           </div>
 
           <div>
-            <h4 className="py-4 mt-4 mr-8">Features</h4>
-            <p>👉 Testtest</p>
+            <h4 className="py-4 mt-4 mr-8">Key Features</h4>
+            <p className="p-2">
+              👉 Built from Scratch: Developed a completely new website
+              structure while maintaining essential business data.
+            </p>
+            <p className="p-2">
+              👉 Instagram Integration: Embedded a live Instagram feed to
+              enhance engagement and showcase recent updates.
+            </p>
+            <p className="p-2">
+              👉 SEO Optimization: Structured content and implemented SEO best
+              practices to improve search visibility.
+            </p>
+            <p className="p-2">
+              👉 Responsive & Fast: Ensured mobile responsiveness and optimized
+              performance for a smooth user experience.
+            </p>
           </div>
 
           <div className=" max-w-[1240px] mx-auto p-6 ">
