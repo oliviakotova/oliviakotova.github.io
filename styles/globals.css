@@ -42,6 +42,9 @@ li {
     transform: rotate(360deg);
   }
 }
+.active {
+  border-bottom: 1px solid #1f2937;
+}
 
 .animate-spin-slow {
   animation: spin-slow 5s linear infinite; /* Slow down the spin by increasing the time */
@@ -82,4 +85,7 @@ li {
 
 .dark .projects-link {
   @apply text-[#bdc5cb];
+}
+.dark .active {
+  border-bottom: 1px solid #1f2937;
 }

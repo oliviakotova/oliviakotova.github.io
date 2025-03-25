@@ -30,11 +30,21 @@ export default function Home() {
       {/* Show the spinner if the page is still loading */}
       {loading && <LoadingSpinner />}
 
-      <Main />
-      <About />
-      <Projects />
-      <Skills />
-      <Contacts />
+      <section id="home" className="h-screen flex items-center justify-center">
+        <Main />{" "}
+      </section>
+      <section id="about" className="h-screen flex items-center justify-center">
+        <About />{" "}
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="contact">
+        <Contacts />
+      </section>
     </div>
   );
 }
