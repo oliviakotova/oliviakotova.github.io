@@ -15,7 +15,7 @@ import Project from "./Project";
 
 const Projects = () => {
   return (
-    <div id="projects" className="w-full">
+    <div id="projects" className="w-full min-h-screen">
       <div className="max-w-[1240px] mx-auto px-6 py-16">
         <p className="text-xl tracking-widest uppercase text-[#4382e8]">
           Projects

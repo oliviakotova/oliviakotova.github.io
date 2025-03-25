@@ -30,11 +30,11 @@ export default function Home() {
       {/* Show the spinner if the page is still loading */}
       {loading && <LoadingSpinner />}
 
-      <section id="home" className="h-screen flex items-center justify-center">
-        <Main />{" "}
+      <section id="home">
+        <Main />
       </section>
-      <section id="about" className="h-screen flex items-center justify-center">
-        <About />{" "}
+      <section id="about">
+        <About />
       </section>
       <section id="projects">
         <Projects />
