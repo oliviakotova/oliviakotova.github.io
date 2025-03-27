@@ -49,7 +49,7 @@ const ContactForm = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="flex flex-col py-2">
             <label htmlFor="name" className="uppercase text-sm py-2">
-              Name <span className="text-red-500">*</span>
+              Name <span className="text-[#cb6d50]">*</span>
             </label>
             <input
               id="name"
@@ -59,13 +59,13 @@ const ContactForm = () => {
               className="border-2 rounded-lg p-3 flex border-gray-300"
             />
             {errors.name && (
-              <p className="text-red-500 text-sm">{errors.name.message}</p>
+              <p className="text-[#cb6d50] text-sm">{errors.name.message}</p>
             )}
           </div>
 
           <div className="flex flex-col py-2">
             <label htmlFor="email" className="uppercase text-sm py-2">
-              Email <span className="text-red-500">*</span>
+              Email <span className="text-[#cb6d50]">*</span>
             </label>
             <input
               id="email"
@@ -75,13 +75,13 @@ const ContactForm = () => {
               className="border-2 rounded-lg p-3 flex border-gray-300"
             />
             {errors.email && (
-              <p className="text-red-500 text-sm">{errors.email.message}</p>
+              <p className="text-[#cb6d50] text-sm">{errors.email.message}</p>
             )}
           </div>
 
           <div className="flex flex-col py-2">
             <label htmlFor="message" className="uppercase text-sm py-2">
-              Message <span className="text-red-500">*</span>
+              Message <span className="text-[#cb6d50]">*</span>
             </label>
             <textarea
               id="message"
@@ -91,13 +91,18 @@ const ContactForm = () => {
               rows="10"
             />
             {errors.message && (
-              <p className="text-red-500 text-sm">{errors.message.message}</p>
+              <p className="text-[#cb6d50] text-sm">{errors.message.message}</p>
             )}
           </div>
 
           <button
             type="submit"
-            className="w-full p-4 text-gray-100 mt-4 cursor-pointer hover:scale-105 ease-in duration-300 shadow-xl shadow-gray-400 dark:shadow-[#353d49] rounded-xl uppercase bg-gradient-to-r from-[#4382e8] to-[#1373c7]"
+            className="w-full p-4 text-gray-100 mt-4 cursor-pointer hover:scale-105 ease-in duration-300 shadow-xl shadow-gray-400 dark:shadow-[#353d49] 
+rounded-xl uppercase 
+bg-gradient-to-r from-[#4382e8] to-[#1373c7] 
+dark:from-[#cb6d50] dark:to-[#5d3105]
+
+"
             disabled={status?.loading}
           >
             {status?.loading ? (
@@ -111,7 +116,7 @@ const ContactForm = () => {
         {status?.success && (
           <p className="text-green-500 mt-4">{status.success}</p>
         )}
-        {status?.error && <p className="text-red-500 mt-4">{status.error}</p>}
+        {status?.error && <p className="text-[#cb6d50] mt-4">{status.error}</p>}
       </div>
     </div>
   );

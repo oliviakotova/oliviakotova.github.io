@@ -30,7 +30,8 @@ const Main = () => {
           <p className="uppercase text-sm tracking-widest text-gray-600"></p>
 
           <h1 className="py-4 text-gray-700">
-            Hi, I am <span className="text-[#4382e8]"> Olivia </span>
+            Hi, I am{" "}
+            <span className="text-[#4382e8] dark:text-[#cb6d50]"> Olivia </span>
           </h1>
           <h1 className="py-2 text-gray-700"> A Web Developer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
