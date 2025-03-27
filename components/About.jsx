@@ -5,8 +5,8 @@ import AboutImg from "../public/assets/my_desk.png";
 
 const About = () => {
   return (
-    <div id="about" className="w-full md:h-screen px-6 flex items-center py-16">
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
+    <div id="about" className="w-full md:h-screen flex items-center">
+      <div className="max-w-[1240px] m-auto md:grid px-6 grid-cols-3 py-16gap-8">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-[#4382e8]">
             About me
