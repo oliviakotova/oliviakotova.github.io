@@ -16,9 +16,9 @@ const Project = ({ title, backgroundImg, tech, projectUrl }) => {
   };
 
   return (
-    <Link href={projectUrl} passHref legacyBehavior>
-      <a
-        className="relative flex items-center justify-center h-auto w-full shadow-md rounded-xl group hover:bg-gradient-to-r from-[#1b3463] to-[#5076c7] ease-in duration-300 bg-gray-50 hover:scale-105 delay-150 transition-all overflow-hidden"
+    <Link href={projectUrl} passHref>
+      <div
+        className="relative flex items-center justify-center h-auto w-full shadow-md rounded-xl group hover:bg-gradient-to-r from-[#1b3463] to-[#5076c7] ease-in duration-300 bg-gray-50 hover:scale-105 delay-150 transition-all overflow-hidden cursor-pointer"
         onMouseMove={handleMouseMove}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -33,27 +33,25 @@ const Project = ({ title, backgroundImg, tech, projectUrl }) => {
           <p className="pb-4 pt-2 text-white">{tech}</p>
         </div>
 
+        {/* Hide orange button on mobile */}
         {isHovered && (
           <motion.div
-            className="absolute flex items-center justify-center"
-            style={{ top: cursorPos.y, left: cursorPos.x }}
+            className="absolute flex items-center justify-center px-8 py-4 bg-orange-500 text-white rounded-full text-md cursor-pointer shadow-md hidden md:flex"
+            style={{
+              top: cursorPos.y,
+              left: cursorPos.x,
+              whiteSpace: "nowrap",
+              minWidth: "120px",
+            }}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
             transition={{ type: "spring", stiffness: 150, damping: 15 }}
           >
-            {/* Outer transparent effect */}
-            <div className="absolute w-full h-full bg-blue-500 opacity-50 rounded-full blur-lg mix-blend-multiply"></div>
-
-            {/* Main button */}
-            <Link href={projectUrl}>
-              <div className="relative px-6 py-4 bg-orange-500 text-white rounded-full text-md cursor-pointer shadow-md">
-                View Detail
-              </div>
-            </Link>
+            View Details
           </motion.div>
         )}
-      </a>
+      </div>
     </Link>
   );
 };
