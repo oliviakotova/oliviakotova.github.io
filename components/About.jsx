@@ -54,9 +54,13 @@ const About = () => {
             <p className="py-2 text-gray-600 underline cursor-pointer">my CV</p>
           </Link> */}
         </div>
-        <div className="w-full h-auto m-auto shadow-md rounded-xl flex items-center justify-center p-4 bg-gray-50">
+        <div className="w-full h-auto m-auto shadow-md rounded-xl flex items-center justify-center">
           {" "}
-          <Image src={AboutImg} alt="/" width="500" height="550" />
+          <Image
+            className="rounded-xl group-hover:opacity-20 transition-all duration-300"
+            src={AboutImg}
+            alt="Olivia's Workspace"
+          />
         </div>
       </div>
     </div>

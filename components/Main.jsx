@@ -30,7 +30,7 @@ const Main = () => {
           <p className="uppercase text-sm tracking-widest text-gray-600"></p>
 
           <h1 className="py-4 text-gray-700">
-            Hi, I am{" "}
+            Hey, I am{" "}
             <span className="text-[#4382e8] dark:text-[#cb6d50]"> Olivia </span>
           </h1>
           <h1 className="py-2 text-gray-700"> A Web Developer</h1>
@@ -53,7 +53,7 @@ const Main = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-md p-6 cursor-pointer hover:scale-150 hover:shadow-2xl hover:rotate-12 ease-in-out duration-300 bg-gray-50 hover:bg-gradient-to-r hover:from-blue-500 hover:via-green-500 hover:to-purple-500 transition-all hover:shadow-2xl hover:animate-pulse">
+              <div className="rounded-full shadow-md p-6 cursor-pointer hover:scale-150 ease-in duration-300 bg-gray-50">
                 <FaGithub />
               </div>
             </a>

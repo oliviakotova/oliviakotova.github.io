@@ -1,28 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Project = ({ title, backgroundImg, tech, projectUrl }) => {
+  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    setCursorPos({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    });
+  };
+
   return (
-    <div className="relative flex items-center justify-center  h-auto w-full shadow-md rounded-xl group hover:bg-gradient-to-r from-[#1b3463] to-[#5076c7]  ease-in duration-300 bg-gray-50  hover:scale-105 delay-150 transition-all">
-      <Image
-        className="rounded-xl group-hover:opacity-20 transition-all duration-300"
-        // className="transition ease-in-out duration-300 group-hover:opacity-20"
-        src={backgroundImg}
-        alt="/"
-      />
-      <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ">
-        <h2 className="text-2xl text-white tracking-wider text-center">
-          {title}
-        </h2>
-        <p className="pb-4 pt-2 text-white text-center">{tech}</p>
-        <Link href={projectUrl}>
-          <h3 className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer hover:scale-105 ease-in duration-300">
-            More Info
-          </h3>
-        </Link>
-      </div>
-    </div>
+    <Link href={projectUrl} passHref legacyBehavior>
+      <a
+        className="relative flex items-center justify-center h-auto w-full shadow-md rounded-xl group hover:bg-gradient-to-r from-[#1b3463] to-[#5076c7] ease-in duration-300 bg-gray-50 hover:scale-105 delay-150 transition-all overflow-hidden"
+        onMouseMove={handleMouseMove}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <Image
+          className="rounded-xl group-hover:opacity-20 transition-all duration-300"
+          src={backgroundImg}
+          alt={title}
+        />
+        <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center">
+          <h2 className="text-2xl text-white tracking-wider">{title}</h2>
+          <p className="pb-4 pt-2 text-white">{tech}</p>
+        </div>
+
+        {isHovered && (
+          <motion.div
+            className="absolute flex items-center justify-center"
+            style={{ top: cursorPos.y, left: cursorPos.x }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 150, damping: 15 }}
+          >
+            {/* Outer transparent effect */}
+            <div className="absolute w-full h-full bg-blue-500 opacity-50 rounded-full blur-lg mix-blend-multiply"></div>
+
+            {/* Main button */}
+            <Link href={projectUrl}>
+              <div className="relative px-6 py-4 bg-orange-500 text-white rounded-full text-md cursor-pointer shadow-md">
+                View Detail
+              </div>
+            </Link>
+          </motion.div>
+        )}
+      </a>
+    </Link>
   );
 };
 

@@ -22,7 +22,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleShadow);
   }, []);
 
-  // 🔹 Force update active section after navigating back to homepage
+  // Force update active section after navigating back to homepage
   useEffect(() => {
     if (router.pathname === "/") {
       setTimeout(() => {
@@ -103,19 +103,29 @@ const Navbar = () => {
               { href: "#about", label: "About" },
               { href: "#projects", label: "Projects" },
               { href: "#skills", label: "Skills" },
-              { href: "#contact", label: "Contacts" },
+              { href: "#contact", label: "Contact" },
             ].map((item) => (
-              <li key={item.href}>
+              <li key={item.href} className="relative group">
                 <a
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href.substring(1))}
-                  className={`text-sm uppercase cursor-pointer   dark:text-[#ecf0f3] ${
-                    activeSection === item.href.substring(1)
-                      ? "border-b border-black dark:border-[#ecf0f3] "
-                      : "hover:border-b hover:border-black dark:hover:border-[#ecf0f3] "
-                  }`}
+                  className="text-sm uppercase cursor-pointer dark:text-[#ecf0f3] relative pb-1"
                 >
                   {item.label}
+
+                  {/* Active Section Underline */}
+                  {activeSection === item.href.substring(1) && (
+                    <span className="absolute left-0 -bottom-[1px] w-full h-[1px] bg-black dark:bg-[#ecf0f3]"></span>
+                  )}
+
+                  {/* Hover Animated Underline */}
+                  <span
+                    className={`absolute left-0 -bottom-[1px] h-[1px] bg-black dark:bg-[#ecf0f3] transition-all duration-300 ease-in-out group-hover:w-full ${
+                      activeSection === item.href.substring(1)
+                        ? "w-full"
+                        : "w-0"
+                    }`}
+                  ></span>
                 </a>
               </li>
             ))}
@@ -177,8 +187,8 @@ const Navbar = () => {
                     onClick={(e) => handleNavClick(e, item.href.substring(1))}
                     className={`block py-3 text-sm tracking-wider dark:text-[#ecf0f3] ${
                       activeSection === item.href.substring(1)
-                        ? "border-l-4 border-black pl-4 dark:border-[#ecf0f3] font-semibold"
-                        : "hover:border-l-4 hover:border-black pl-4 dark:hover:border-[#ecf0f3] transition"
+                        ? "border-l-2 border-black pl-2 dark:border-[#ecf0f3] font-semibold"
+                        : "hover:border-l-2 hover:border-black pl-2 dark:hover:border-[#ecf0f3] transition"
                     }`}
                   >
                     {item.label}
