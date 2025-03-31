@@ -54,9 +54,10 @@ const anastasia = () => {
           <div>
             <h4 className="py-4">Overview </h4>
             <p>
-              A modern, fully responsive business website for Koshka Media Pty
-              Ltd built with WordPress and Elementor to provide an engaging user
-              experience and easy-to-navigate interface for potential customers.
+              A modern, fully responsive business website for Anastatsia
+              Cosmetic Studio built with WordPress and Elementor to provide an
+              engaging user experience and easy-to-navigate interface for
+              potential customers.
             </p>
           </div>
 
