@@ -24,27 +24,27 @@ const Main = () => {
   };
 
   return (
-    <div id="home" className=" w-full h-screen text-center">
-      <div className=" relative max-w-[1240px] w-full h-full mx-auto  flex justify-center items-center">
+    <div id="home" className="h-screen w-full text-center">
+      <div className="relative mx-auto flex h-full w-full max-w-[1240px] items-center justify-center">
         <div>
-          <p className="uppercase text-sm tracking-widest text-gray-600"></p>
+          <p className="text-sm uppercase tracking-widest text-gray-600"></p>
 
           <h1 className="py-4 text-gray-700">
             Hey, I am{" "}
             <span className="text-[#4382e8] dark:text-[#cb6d50]"> Olivia </span>
           </h1>
           <h1 className="py-2 text-gray-700"> A Web Developer</h1>
-          <p className="py-4 text-gray-600 max-w-[70%] m-auto">
+          <p className="m-auto max-w-[70%] py-4 text-gray-600">
             I’m focused on building responsive front-end web applications while
             learning back-end technologies.
           </p>
-          <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+          <div className="m-auto flex max-w-[330px] items-center justify-between py-4">
             <a
               href="https://www.linkedin.com/in/olivia-kotova"
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-md p-6 cursor-pointer hover:scale-150 ease-in duration-300 bg-gray-50">
+              <div className="cursor-pointer rounded-full bg-gray-50 p-6 shadow-md duration-300 ease-in hover:scale-150">
                 <FaLinkedinIn />
               </div>
             </a>
@@ -53,13 +53,13 @@ const Main = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-md p-6 cursor-pointer hover:scale-150 ease-in duration-300 bg-gray-50">
+              <div className="cursor-pointer rounded-full bg-gray-50 p-6 shadow-md duration-300 ease-in hover:scale-150">
                 <FaGithub />
               </div>
             </a>
 
             <a onClick={handleEmailClick} target="_blank" rel="noreferrer">
-              <div className="rounded-full shadow-md p-6 cursor-pointer hover:scale-150 ease-in duration-300 bg-gray-50">
+              <div className="cursor-pointer rounded-full bg-gray-50 p-6 shadow-md duration-300 ease-in hover:scale-150">
                 <FaEnvelope />
               </div>
             </a>

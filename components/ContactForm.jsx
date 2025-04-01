@@ -44,11 +44,11 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="col-span-3 w-full h-auto shadow-md rounded-xl lg:p-4">
+    <div className="col-span-3 h-auto w-full rounded-xl shadow-md lg:p-4">
       <div className="p-4">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="flex flex-col py-2">
-            <label htmlFor="name" className="uppercase text-sm py-2">
+            <label htmlFor="name" className="py-2 text-sm uppercase">
               Name <span className="text-[#cb6d50]">*</span>
             </label>
             <input
@@ -56,15 +56,15 @@ const ContactForm = () => {
               type="text"
               placeholder="Your name"
               {...register("name")}
-              className="border-2 rounded-lg p-3 flex border-gray-300"
+              className="flex rounded-lg border-2 border-gray-300 p-3"
             />
             {errors.name && (
-              <p className="text-[#cb6d50] text-sm">{errors.name.message}</p>
+              <p className="text-sm text-[#cb6d50]">{errors.name.message}</p>
             )}
           </div>
 
           <div className="flex flex-col py-2">
-            <label htmlFor="email" className="uppercase text-sm py-2">
+            <label htmlFor="email" className="py-2 text-sm uppercase">
               Email <span className="text-[#cb6d50]">*</span>
             </label>
             <input
@@ -72,37 +72,32 @@ const ContactForm = () => {
               type="email"
               placeholder="Your email"
               {...register("email")}
-              className="border-2 rounded-lg p-3 flex border-gray-300"
+              className="flex rounded-lg border-2 border-gray-300 p-3"
             />
             {errors.email && (
-              <p className="text-[#cb6d50] text-sm">{errors.email.message}</p>
+              <p className="text-sm text-[#cb6d50]">{errors.email.message}</p>
             )}
           </div>
 
           <div className="flex flex-col py-2">
-            <label htmlFor="message" className="uppercase text-sm py-2">
+            <label htmlFor="message" className="py-2 text-sm uppercase">
               Message <span className="text-[#cb6d50]">*</span>
             </label>
             <textarea
               id="message"
               placeholder="Your message"
               {...register("message")}
-              className="border-2 rounded-lg p-3 border-gray-300"
+              className="rounded-lg border-2 border-gray-300 p-3"
               rows="10"
             />
             {errors.message && (
-              <p className="text-[#cb6d50] text-sm">{errors.message.message}</p>
+              <p className="text-sm text-[#cb6d50]">{errors.message.message}</p>
             )}
           </div>
 
           <button
             type="submit"
-            className="w-full p-4 text-gray-100 mt-4 cursor-pointer hover:scale-105 ease-in duration-300 shadow-xl shadow-gray-400 dark:shadow-[#353d49] 
-rounded-xl uppercase 
-bg-gradient-to-r from-[#4382e8] to-[#1373c7] 
-dark:from-[#cb6d50] dark:to-[#5d3105]
-
-"
+            className="mt-4 w-full cursor-pointer rounded-xl bg-gradient-to-r from-[#4382e8] to-[#1373c7] p-4 uppercase text-gray-100 shadow-xl shadow-gray-400 duration-300 ease-in hover:scale-105 dark:from-[#cb6d50] dark:to-[#5d3105] dark:shadow-[#353d49]"
             disabled={status?.loading}
           >
             {status?.loading ? (
@@ -114,9 +109,9 @@ dark:from-[#cb6d50] dark:to-[#5d3105]
         </form>
 
         {status?.success && (
-          <p className="text-green-500 mt-4">{status.success}</p>
+          <p className="mt-4 text-green-500">{status.success}</p>
         )}
-        {status?.error && <p className="text-[#cb6d50] mt-4">{status.error}</p>}
+        {status?.error && <p className="mt-4 text-[#cb6d50]">{status.error}</p>}
       </div>
     </div>
   );

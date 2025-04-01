@@ -53,7 +53,7 @@ const Navbar = () => {
           }
         });
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -83,21 +83,21 @@ const Navbar = () => {
 
   return (
     <div
-      className={`fixed w-full h-16 z-[100] transition-all duration-300 ${
+      className={`fixed z-[100] h-16 w-full transition-all duration-300 ${
         shadow
-          ? "shadow-md bg-[#ecf0f3] dark:bg-[#353d49]"
+          ? "bg-[#ecf0f3] shadow-md dark:bg-[#353d49]"
           : "dark:bg-[#353d49]"
       }`}
     >
-      <div className="flex justify-between items-center w-full h-full px-6 2xl:px-16">
+      <div className="flex h-full w-full items-center justify-between px-6 2xl:px-16">
         <Link href="/">
-          <div className="pt-2.5 cursor-pointer">
+          <div className="cursor-pointer pt-2.5">
             <Image src={LogoNav} alt="/" width="70" height="75" />
           </div>
         </Link>
         <div className="flex items-center">
           {/* Desktop Menu */}
-          <ul className="hidden md:flex space-x-10">
+          <ul className="hidden space-x-10 md:flex">
             {[
               { href: "#home", label: "Home" },
               { href: "#about", label: "About" },
@@ -105,22 +105,22 @@ const Navbar = () => {
               { href: "#skills", label: "Skills" },
               { href: "#contact", label: "Contact" },
             ].map((item) => (
-              <li key={item.href} className="relative group">
+              <li key={item.href} className="group relative">
                 <a
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href.substring(1))}
-                  className="text-sm uppercase cursor-pointer dark:text-[#ecf0f3] relative pb-1"
+                  className="relative cursor-pointer pb-1 text-sm uppercase dark:text-[#ecf0f3]"
                 >
                   {item.label}
 
                   {/* Active Section Underline */}
                   {activeSection === item.href.substring(1) && (
-                    <span className="absolute left-0 -bottom-[1px] w-full h-[1px] bg-black dark:bg-[#ecf0f3]"></span>
+                    <span className="absolute -bottom-[1px] left-0 h-[1px] w-full bg-black dark:bg-[#ecf0f3]"></span>
                   )}
 
                   {/* Hover Animated Underline */}
                   <span
-                    className={`absolute left-0 -bottom-[1px] h-[1px] bg-black dark:bg-[#ecf0f3] transition-all duration-300 ease-in-out group-hover:w-full ${
+                    className={`absolute -bottom-[1px] left-0 h-[1px] bg-black transition-all duration-300 ease-in-out group-hover:w-full dark:bg-[#ecf0f3] ${
                       activeSection === item.href.substring(1)
                         ? "w-full"
                         : "w-0"
@@ -134,7 +134,7 @@ const Navbar = () => {
           {/* Theme Toggle Button */}
           <button
             onClick={() => setIsDarkMode(!isDarkMode)}
-            className="ml-10 text-sm uppercase cursor-pointer hidden md:block hover:border-b hover:border-black dark:hover:border-[#ecf0f3]"
+            className="ml-10 hidden cursor-pointer text-sm uppercase hover:border-b hover:border-black dark:hover:border-[#ecf0f3] md:block"
           >
             {isDarkMode ? "Light Mode" : "Dark Mode"}
           </button>
@@ -148,32 +148,32 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed left-0 top-0 w-full h-screen bg-black/70 transition duration-500 ${
+        className={`fixed left-0 top-0 h-screen w-full bg-black/70 transition duration-500 ${
           nav ? "block" : "hidden"
         }`}
       >
         {/* Side Mobile Menu */}
         <div
-          className={`fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 dark:bg-[#353d49] dark:text-white transition-transform duration-300 ${
+          className={`fixed left-0 top-0 h-screen w-[75%] bg-[#ecf0f3] p-10 transition-transform duration-300 dark:bg-[#353d49] dark:text-white sm:w-[60%] md:w-[45%] ${
             nav ? "translate-x-0" : "-translate-x-full"
           }`}
         >
           <div className="flex w-full items-center justify-between">
             <Link href="/">
-              <div className="pt-2.5 cursor-pointer">
+              <div className="cursor-pointer pt-2.5">
                 <Image src={LogoNav} alt="/" width="70" height="75" />
               </div>
             </Link>
             <div
               onClick={() => setNav(false)}
-              className="rounded-full shadow-md p-6 cursor-pointer hover:scale-110 transition duration-300 bg-gray-50"
+              className="cursor-pointer rounded-full bg-gray-50 p-6 shadow-md transition duration-300 hover:scale-110"
             >
               <AiOutlineClose className="dark:text-[#1f2937]" />
             </div>
           </div>
 
-          <div className="py-6 flex flex-col">
-            <ul className="uppercase space-y-4">
+          <div className="flex flex-col py-6">
+            <ul className="space-y-4 uppercase">
               {[
                 { href: "#home", label: "Home" },
                 { href: "#about", label: "About" },
@@ -187,8 +187,8 @@ const Navbar = () => {
                     onClick={(e) => handleNavClick(e, item.href.substring(1))}
                     className={`block py-3 text-sm tracking-wider dark:text-[#ecf0f3] ${
                       activeSection === item.href.substring(1)
-                        ? "border-l-2 border-black pl-2 dark:border-[#ecf0f3] font-semibold"
-                        : "hover:border-l-2 hover:border-black pl-2 dark:hover:border-[#ecf0f3] transition"
+                        ? "border-l-2 border-black pl-2 font-semibold dark:border-[#ecf0f3]"
+                        : "pl-2 transition hover:border-l-2 hover:border-black dark:hover:border-[#ecf0f3]"
                     }`}
                   >
                     {item.label}
@@ -199,7 +199,7 @@ const Navbar = () => {
             <div className="pt-20">
               <button
                 onClick={() => setIsDarkMode(!isDarkMode)}
-                className="uppercase tracking-widest text-sm"
+                className="text-sm uppercase tracking-widest"
               >
                 {isDarkMode ? "Light Mode" : "Dark Mode"}
               </button>

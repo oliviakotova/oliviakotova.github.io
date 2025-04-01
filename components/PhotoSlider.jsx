@@ -43,7 +43,7 @@ const PhotoSlider = ({ images }) => {
   // Navigate to the previous slide
   const prevSlide = () => {
     setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+      (prevIndex) => (prevIndex - 1 + images.length) % images.length,
     );
   };
 
@@ -60,28 +60,28 @@ const PhotoSlider = ({ images }) => {
 
   return (
     <div
-      className="relative flex justify-center items-center flex-col w-full"
+      className="relative flex w-full flex-col items-center justify-center"
       onMouseEnter={handleMouseEnter} // Stop sliding on hover
       onMouseLeave={handleMouseLeave} // Resume sliding when hover ends
     >
       {/* Image container with responsive width */}
       <div
-        className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px] max-w-screen-xl shadow-md  bg-gray-50 rounded-xl overflow-hidden mb-0 sm:mb-0"
+        className="relative mb-0 h-[300px] w-full max-w-screen-xl overflow-hidden rounded-xl bg-gray-50 shadow-md sm:mb-0 sm:h-[400px] md:h-[500px] lg:h-[600px] xl:h-[700px]"
         onClick={handleImageClick}
         {...swipeHandlers} // Add swipe handlers to the image container
       >
         <div
-          className="absolute top-0 left-0 w-full h-full flex transition-transform duration-1000 ease-in-out"
+          className="absolute left-0 top-0 flex h-full w-full transition-transform duration-1000 ease-in-out"
           style={{
             transform: `translateX(-${currentIndex * 100}%)`, // Slide transition
           }}
         >
           {images.map((src, index) => (
-            <div key={index} className="w-full h-full flex-shrink-0">
+            <div key={index} className="h-full w-full flex-shrink-0">
               <img
                 src={src}
                 alt={`Slide ${index + 1}`}
-                className="w-full h-full object-contain" // Ensures the whole image is visible without cropping
+                className="h-full w-full object-contain" // Ensures the whole image is visible without cropping
               />
             </div>
           ))}
@@ -89,7 +89,7 @@ const PhotoSlider = ({ images }) => {
       </div>
 
       {/* Dots navigation */}
-      <div className="mt-4 sm:mt-4 w-full flex justify-center space-x-6 sm:space-x-3">
+      <div className="mt-4 flex w-full justify-center space-x-6 sm:mt-4 sm:space-x-3">
         {" "}
         {/* Adjusted spacing for mobile */}
         {images.map((_, index) => (

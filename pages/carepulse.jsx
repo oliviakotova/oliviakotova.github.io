@@ -19,11 +19,11 @@ const carepulse = () => {
 
   return (
     <div className="w-full">
-      <div className="container mx-auto py-12 ">
+      <div className="container mx-auto py-12">
         <PhotoSlider images={images} />
       </div>
 
-      <div className="max-w-[1240px] mx-auto p-6 grid md:grid-cols-5 gap-8 py-24">
+      <div className="mx-auto grid max-w-[1240px] gap-8 p-6 py-24 md:grid-cols-5">
         {/* Left Column for Text Content */}
         <div className="col-span-4 flex flex-wrap gap-8">
           <h2>
@@ -34,7 +34,7 @@ const carepulse = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              className=" underline cursor-pointer px-8 mt-4 hover:scale-110 ease-in duration-100 projects-link"
+              className="projects-link mt-4 cursor-pointer px-8 underline duration-100 ease-in hover:scale-110"
             >
               ⚙️ GitHub
             </a>
@@ -44,7 +44,7 @@ const carepulse = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              className="underline cursor-pointer px-8 mt-4 hover:scale-110 ease-in duration-100 projects-link"
+              className="projects-link mt-4 cursor-pointer px-8 underline duration-100 ease-in hover:scale-110"
             >
               🚀 Visit App
             </a>
@@ -62,7 +62,7 @@ const carepulse = () => {
           </div>
 
           <div>
-            <h4 className="py-4 mt-4 mr-8">Features</h4>
+            <h4 className="mr-8 mt-4 py-4">Features</h4>
             <p>
               👉 Users can sign up and create a personal profile as a patient.
             </p>
@@ -102,26 +102,26 @@ const carepulse = () => {
         </div>
 
         {/* Right Column for Tech Stack */}
-        <div className="col-span-4 md:col-span-1 shadow-md  rounded-xl py-4">
+        <div className="col-span-4 rounded-xl py-4 shadow-md md:col-span-1">
           <div className="p-2">
-            <h4 className="font-bold pb-2">Tech Stack</h4>
+            <h4 className="pb-2 font-bold">Tech Stack</h4>
             <div className="grid grid-cols-2 md:grid-cols-1">
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="flex items-center py-2 text-gray-600">
                 <RiRadioButtonFill className="pr-1" /> Next.js
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="flex items-center py-2 text-gray-600">
                 <RiRadioButtonFill className="pr-1" /> Appwrite
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="flex items-center py-2 text-gray-600">
                 <RiRadioButtonFill className="pr-1" /> Typescript
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="flex items-center py-2 text-gray-600">
                 <RiRadioButtonFill className="pr-1" /> TailwindCSS
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="flex items-center py-2 text-gray-600">
                 <RiRadioButtonFill className="pr-1" /> ShadCN
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="flex items-center py-2 text-gray-600">
                 <RiRadioButtonFill className="pr-1" /> Twilio
               </p>
             </div>
@@ -129,8 +129,8 @@ const carepulse = () => {
         </div>
       </div>
       {/* Video Section */}
-      <div className=" max-w-[1240px] mx-auto p-6 ">
-        <h4 className=" mb-6"> Booking part video</h4>
+      <div className="mx-auto max-w-[1240px] p-6">
+        <h4 className="mb-6"> Booking part video</h4>
         <video
           controls
           preload="metadata"
@@ -148,15 +148,15 @@ const carepulse = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="max-w-[1240px] mx-auto p-6 flex justify-between items-center">
+      <div className="mx-auto flex max-w-[1240px] items-center justify-between p-6">
         <Link href="/carepulse_admin">
-          <p className="underline cursor-pointer py-8 mt-6 hover:scale-110 ease-in duration-100">
+          <p className="mt-6 cursor-pointer py-8 underline duration-100 ease-in hover:scale-110">
             🚀 Visit CarePulse Admin Panel
           </p>
         </Link>
 
         <Link href="/#projects">
-          <p className="underline py-8 cursor-pointer hover:scale-110 transform origin-center ease-in duration-100 mt-6">
+          <p className="mt-6 origin-center transform cursor-pointer py-8 underline duration-100 ease-in hover:scale-110">
             Back to Projects
           </p>
         </Link>

@@ -18,25 +18,25 @@ const Project = ({ title, backgroundImg, tech, projectUrl }) => {
   return (
     <Link href={projectUrl} passHref>
       <div
-        className="relative flex items-center justify-center h-auto w-full shadow-md rounded-xl group hover:bg-gradient-to-r from-[#1b3463] to-[#5076c7] ease-in duration-300 bg-gray-50 hover:scale-105 delay-150 transition-all overflow-hidden cursor-pointer"
+        className="group relative flex h-auto w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-gray-50 from-[#1b3463] to-[#5076c7] shadow-md transition-all delay-150 duration-300 ease-in hover:scale-105 hover:bg-gradient-to-r"
         onMouseMove={handleMouseMove}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         <Image
-          className="rounded-xl group-hover:opacity-20 transition-all duration-300"
+          className="rounded-xl transition-all duration-300 group-hover:opacity-20"
           src={backgroundImg}
           alt={title}
         />
-        <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center">
-          <h2 className="text-2xl text-white tracking-wider">{title}</h2>
+        <div className="absolute left-[50%] top-[50%] hidden translate-x-[-50%] translate-y-[-50%] text-center group-hover:block">
+          <h2 className="text-2xl tracking-wider text-white">{title}</h2>
           <p className="pb-4 pt-2 text-white">{tech}</p>
         </div>
 
         {/* Hide orange button on mobile */}
         {isHovered && (
           <motion.div
-            className="absolute flex items-center justify-center px-8 py-4 bg-orange-500 text-white rounded-full text-md cursor-pointer shadow-md hidden md:flex"
+            className="text-md absolute flex hidden cursor-pointer items-center justify-center rounded-full bg-orange-500 px-8 py-4 text-white shadow-md md:flex"
             style={{
               top: cursorPos.y,
               left: cursorPos.x,

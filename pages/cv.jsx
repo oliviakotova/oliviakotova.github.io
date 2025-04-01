@@ -15,7 +15,7 @@ const cv = () => {
           <title className="pb-6">Olivia Kotova</title>
         </Head>
         <div className="w-full">
-          <div className="max-w-[1240px] mx-auto p-10 grid md:grid-cols-5 gap-8 py-20">
+          <div className="mx-auto grid max-w-[1240px] gap-8 p-10 py-20 md:grid-cols-5">
             <div className="col-span-4 space-y-5">
               <h2 className="text-[hsl(217,56%,45%)]">OLIVIA KOTOVA</h2>
 
@@ -23,7 +23,7 @@ const cv = () => {
                 <Link href="https://www.linkedin.com/in/olivia-kotova/">
                   <a
                     p
-                    className="py-4 underline cursor-pointer text-[hsl(217,56%,45%)]"
+                    className="cursor-pointer py-4 text-[hsl(217,56%,45%)] underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -34,7 +34,7 @@ const cv = () => {
               <p>
                 <a
                   //p="true"
-                  className="py-4 underline cursor-pointer text-[hsl(217,56%,45%)]"
+                  className="cursor-pointer py-4 text-[hsl(217,56%,45%)] underline"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() =>
@@ -45,12 +45,12 @@ const cv = () => {
                 </a>
               </p>
 
-              <h3 className="text-[hsl(217,56%,45%)] uppercase pt-8">
+              <h3 className="pt-8 uppercase text-[hsl(217,56%,45%)]">
                 Eucation:
               </h3>
               <p>Website Development Diploma(TAFE South Bank, QLD)</p>
 
-              <h3 className="text-[hsl(217,56%,45%)] uppercase pt-8">
+              <h3 className="pt-8 uppercase text-[hsl(217,56%,45%)]">
                 Summary
               </h3>
               <p>
@@ -66,60 +66,60 @@ const cv = () => {
                 presentations.
               </p>
             </div>
-            <div className="col-span-4 md:col-span-1 shadow-md  rounded-xl py-4">
+            <div className="col-span-4 rounded-xl py-4 shadow-md md:col-span-1">
               <div className="p-2">
-                <p className="text-[hsl(217,56%,45%)] font-bold pb-4 uppercase">
+                <p className="pb-4 font-bold uppercase text-[hsl(217,56%,45%)]">
                   Technologies:
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-1">
-                  <p className="text-gray-600 py-2 flex items-center">
+                  <p className="flex items-center py-2 text-gray-600">
                     <RiRadioButtonFill className="pr-1" /> JavaScript
                   </p>
-                  <p className="text-gray-600 py-2 flex items-center">
+                  <p className="flex items-center py-2 text-gray-600">
                     <RiRadioButtonFill className="pr-1" /> HTML/CSS
                   </p>
-                  <p className="text-gray-600 py-2 flex items-center">
+                  <p className="flex items-center py-2 text-gray-600">
                     <RiRadioButtonFill className="pr-1" /> React.js
                   </p>
-                  <p className="text-gray-600 py-2 flex items-center">
+                  <p className="flex items-center py-2 text-gray-600">
                     <RiRadioButtonFill className="pr-1" /> Next.js
                   </p>
-                  <p className="text-gray-600 py-2 flex items-center">
+                  <p className="flex items-center py-2 text-gray-600">
                     <RiRadioButtonFill className="pr-1" /> Node.js
                   </p>
-                  <p className="text-gray-600 py-2 flex items-center">
+                  <p className="flex items-center py-2 text-gray-600">
                     <RiRadioButtonFill className="pr-1" /> Express.js
                   </p>
-                  <p className="text-gray-600 py-2 flex items-center">
+                  <p className="flex items-center py-2 text-gray-600">
                     <RiRadioButtonFill className="pr-1" /> Restful API
                   </p>
-                  <p className="text-gray-600 py-2 flex items-center">
+                  <p className="flex items-center py-2 text-gray-600">
                     <RiRadioButtonFill className="pr-1" /> MySQL
                   </p>
-                  <p className="text-gray-600 py-2 flex items-center">
+                  <p className="flex items-center py-2 text-gray-600">
                     <RiRadioButtonFill className="pr-1" /> MongoDB
                   </p>
-                  <p className="text-gray-600 py-2 flex items-center">
+                  <p className="flex items-center py-2 text-gray-600">
                     <RiRadioButtonFill className="pr-1" /> Drupal
                   </p>
-                  <p className="text-gray-600 py-2 flex items-center">
+                  <p className="flex items-center py-2 text-gray-600">
                     <RiRadioButtonFill className="pr-1" /> WordPress
                   </p>
-                  <p className="text-gray-600 py-2 flex items-center">
+                  <p className="flex items-center py-2 text-gray-600">
                     <RiRadioButtonFill className="pr-1" /> Adobe Photoshop
                   </p>
-                  <p className="text-gray-600 py-2 flex items-center">
+                  <p className="flex items-center py-2 text-gray-600">
                     <RiRadioButtonFill className="pr-1" /> Bootstrap
                   </p>
-                  <p className="text-gray-600 py-2 flex items-center">
+                  <p className="flex items-center py-2 text-gray-600">
                     <RiRadioButtonFill className="pr-1" /> Tailwind
                   </p>
                 </div>
               </div>
             </div>
             <div className="col-span-4 space-y-5">
-              <h3 className="text-[hsl(217,56%,45%)] uppercase">Experience:</h3>
-              <h4 className="text-[hsl(217,56%,45%)] pt-8">
+              <h3 className="uppercase text-[hsl(217,56%,45%)]">Experience:</h3>
+              <h4 className="pt-8 text-[hsl(217,56%,45%)]">
                 Graphic Designer and Photo Editor at Koshka Media Pty Ltd
                 (Sydney, Australia) — Sep 2019 - Present time
               </h4>
@@ -127,7 +127,7 @@ const cv = () => {
                 <Link href="https://koshkamedia.com/">
                   <a
                     p
-                    className="pr-2 underline cursor-pointer"
+                    className="cursor-pointer pr-2 underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -147,7 +147,7 @@ const cv = () => {
                 <Link href="https://koshkamedia.com/">
                   <a
                     p
-                    className="pr-2 underline cursor-pointer"
+                    className="cursor-pointer pr-2 underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -160,14 +160,14 @@ const cv = () => {
                 Development (html/ css/ js) and studied full- time at TAFE South
                 Bank towards Diploma in Web Development
               </p>
-              <h4 className="text-[hsl(217,56%,45%)] pt-8">
+              <h4 className="pt-8 text-[hsl(217,56%,45%)]">
                 Warehouse Manager (Brisbane, Australia) — Dec 2022 - Oct 2024
               </h4>
               <p>
                 <Link href="https://www.drummondgolf.com.au">
                   <a
                     p
-                    className="pr-2 underline cursor-pointer"
+                    className="cursor-pointer pr-2 underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -191,7 +191,7 @@ const cv = () => {
                 specs, cost, price, notifying customers
               </p>
 
-              <h4 className="text-[hsl(217,56%,45%)] pt-8">
+              <h4 className="pt-8 text-[hsl(217,56%,45%)]">
                 Graphic Designer at Africa Studio (Mykolayiv, Ukraine) — Dec
                 2014 - Aug 2017
               </h4>
@@ -199,7 +199,7 @@ const cv = () => {
                 <Link href="https://stock.adobe.com/au/contributor/293313/africa-studio">
                   <a
                     p
-                    className="pr-2 underline cursor-pointer"
+                    className="cursor-pointer pr-2 underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -212,7 +212,7 @@ const cv = () => {
                 <Link href="https:// www.shutterstock.com/g/belchonock">
                   <a
                     //p
-                    className="p-2 underline cursor-pointer"
+                    className="cursor-pointer p-2 underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -223,7 +223,7 @@ const cv = () => {
                 <Link href="https://stock.adobe.com/contributor/293313/">
                   <a
                     p={true}
-                    className="p-2 underline cursor-pointer"
+                    className="cursor-pointer p-2 underline"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -246,10 +246,10 @@ const cv = () => {
               <p>• Increased company’s standards of quality</p>
               <p>• Reduced the cost of design due to fast work</p>
               <a href="/cv.pdf" download="olivia_kotova_cv">
-                <h4 className="text-[hsl(217,56%,45%)] pt-8">
+                <h4 className="pt-8 text-[hsl(217,56%,45%)]">
                   References available upon request
                 </h4>
-                <h4 className="text-[hsl(217,56%,45%)] pt-8">
+                <h4 className="pt-8 text-[hsl(217,56%,45%)]">
                   Australian Citizen, full workink rights
                 </h4>
 
@@ -259,7 +259,7 @@ const cv = () => {
               </a>
 
               <Link href="/#main">
-                <p className="underline cursor-pointer hover:scale-10 ease-in pt-16 ">
+                <p className="hover:scale-10 cursor-pointer pt-16 underline ease-in">
                   Back
                 </p>
               </Link>

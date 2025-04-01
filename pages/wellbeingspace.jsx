@@ -39,7 +39,7 @@ const wellbeingspace = () => {
         <PhotoSlider images={images} />
       </div>
 
-      <div className="max-w-[1240px] mx-auto p-6 grid md:grid-cols-5 gap-8 py-24">
+      <div className="mx-auto grid max-w-[1240px] gap-8 p-6 py-24 md:grid-cols-5">
         {/* Left Column for Text Content */}
         <div className="col-span-4">
           <h2 className="py-4"> WELLBEING COUNSELLING, Sydney - Squarespace</h2>
@@ -48,7 +48,7 @@ const wellbeingspace = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              className="underline cursor-pointer  py-8 mt-6 hover:scale-110 ease-in duration-100 projects-link"
+              className="projects-link mt-6 cursor-pointer py-8 underline duration-100 ease-in hover:scale-110"
             >
               🚀 Visit Squarespace Website
             </a>
@@ -64,11 +64,11 @@ const wellbeingspace = () => {
           </div>
 
           <div>
-            <h4 className="py-4 mt-4 mr-8">Features</h4>
+            <h4 className="mr-8 mt-4 py-4">Features</h4>
             <p>👉 Testtest</p>
           </div>
 
-          <div className=" max-w-[1240px] mx-auto p-6 ">
+          <div className="mx-auto max-w-[1240px] p-6">
             <video
               controls
               className="w-full rounded-lg shadow-lg"
@@ -88,7 +88,7 @@ const wellbeingspace = () => {
         </div>
 
         {/* Right Column for Tech Stack */}
-        <div className="col-span-4 md:col-span-1 shadow-md rounded-xl py-4">
+        <div className="col-span-4 rounded-xl py-4 shadow-md md:col-span-1">
           <div className="p-2">
             {/* Image clickable to open in full-screen modal */}
             <Image
@@ -108,13 +108,13 @@ const wellbeingspace = () => {
       {/* Modal for Fullscreen Image */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-70 z-50 flex justify-center "
+          className="fixed inset-0 z-50 flex justify-center bg-black bg-opacity-70"
           onClick={closeModal}
         >
           {/* Modal Content Wrapper */}
-          <div className=" max-h-[90vh] overflow-y-auto p-4">
+          <div className="max-h-[90vh] overflow-y-auto p-4">
             <button
-              className="absolute top-4 right-4 text-white text-3xl"
+              className="absolute right-4 top-4 text-3xl text-white"
               onClick={closeModal}
             >
               ×
@@ -125,21 +125,21 @@ const wellbeingspace = () => {
               alt="Fullscreen Image"
               width={600}
               height={1600}
-              className="w-full h-auto max-h-screen object-contain rounded-lg" // Full width, auto height, maintain aspect ratio
+              className="h-auto max-h-screen w-full rounded-lg object-contain" // Full width, auto height, maintain aspect ratio
             />
           </div>
         </div>
       )}
-      <div className="max-w-[1240px] mx-auto p-6 flex justify-between items-center">
+      <div className="mx-auto flex max-w-[1240px] items-center justify-between p-6">
         <a
           href="https://oliviakotova-ced1437fd5ca.herokuapp.com/anastasia"
           target="_blank"
           rel="noreferrer"
         >
-          <button className="underline py-8 mt-6 hover:scale-110 ease-in duration-100"></button>
+          <button className="mt-6 py-8 underline duration-100 ease-in hover:scale-110"></button>
         </a>
         <Link href="/#projects">
-          <p className="underline py-8 cursor-pointer hover:scale-110 transform origin-center ease-in duration-100 mt-6">
+          <p className="mt-6 origin-center transform cursor-pointer py-8 underline duration-100 ease-in hover:scale-110">
             Back to Projects
           </p>
         </Link>

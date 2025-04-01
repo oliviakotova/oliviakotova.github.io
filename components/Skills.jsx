@@ -21,20 +21,20 @@ import Shopify from "../public/assets/skills/shopify.png";
 
 const Skills = () => {
   return (
-    <div id="skills" className="w-full lg:h-screen  ">
-      <div className="max-w-[1240px] mx-auto flex flex-col justify-center p-6 py-20 h-full">
-        <p className="uppercase text-xl tracking-widest text-[#4382e8]">
+    <div id="skills" className="w-full lg:h-screen">
+      <div className="mx-auto flex h-full max-w-[1240px] flex-col justify-center p-6 py-20">
+        <p className="text-xl uppercase tracking-widest text-[#4382e8]">
           Skills
         </p>
         <h2 className="py-4">What I Can Do</h2>
-        <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-3 gap-6 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
           <a
             href="https://html.spec.whatwg.org/multipage/"
             target="_blank"
             rel="noreferrer"
           >
-            <div className="p-6 shadow-md rounded-md hover:scale-105 ease-in duration-300 bg-gray-50">
-              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4 sm:grid-cols-2 justify-center items-center">
+            <div className="rounded-md bg-gray-50 p-6 shadow-md duration-300 ease-in hover:scale-105">
+              <div className="grid items-center justify-center gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                 <div className="m-auto">
                   <Image src={Html} width="64px" height="64px" alt="/" />
                 </div>
@@ -49,8 +49,8 @@ const Skills = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="p-6 shadow-md rounded-md hover:scale-105 ease-in duration-300 bg-gray-50">
-              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4 sm:grid-cols-2 justify-center items-center">
+            <div className="rounded-md bg-gray-50 p-6 shadow-md duration-300 ease-in hover:scale-105">
+              <div className="grid items-center justify-center gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                 <div className="m-auto">
                   <Image src={Css} width="64px" height="64px" alt="/" />
                 </div>
@@ -65,8 +65,8 @@ const Skills = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="p-6 shadow-md rounded-md hover:scale-105 ease-in duration-300 bg-gray-50">
-              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4 sm:grid-cols-2 justify-center items-center">
+            <div className="rounded-md bg-gray-50 p-6 shadow-md duration-300 ease-in hover:scale-105">
+              <div className="grid items-center justify-center gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                 <div className="m-auto">
                   <Image src={Javascript} width="64px" height="64px" alt="/" />
                 </div>
@@ -81,8 +81,8 @@ const Skills = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="p-6 shadow-md rounded-md hover:scale-105 ease-in duration-300 bg-gray-50">
-              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4 sm:grid-cols-2 justify-center items-center">
+            <div className="rounded-md bg-gray-50 p-6 shadow-md duration-300 ease-in hover:scale-105">
+              <div className="grid items-center justify-center gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                 <div className="m-auto">
                   <Image src={ReactImg} width="64px" height="64px" alt="/" />
                 </div>
@@ -97,8 +97,8 @@ const Skills = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="p-6 shadow-md rounded-md hover:scale-105 ease-in duration-300 bg-gray-50">
-              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4 sm:grid-cols-2 justify-center items-center">
+            <div className="rounded-md bg-gray-50 p-6 shadow-md duration-300 ease-in hover:scale-105">
+              <div className="grid items-center justify-center gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                 <div className="m-auto">
                   <Image src={NextJS} width="64px" height="64px" alt="/" />
                 </div>
@@ -113,8 +113,8 @@ const Skills = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="p-6 shadow-md rounded-md hover:scale-105 ease-in duration-300 bg-gray-50">
-              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4 sm:grid-cols-2 justify-center items-center">
+            <div className="rounded-md bg-gray-50 p-6 shadow-md duration-300 ease-in hover:scale-105">
+              <div className="grid items-center justify-center gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                 <div className="m-auto">
                   <Image src={GitHub} width="64px" height="64px" alt="/" />
                 </div>
@@ -125,8 +125,8 @@ const Skills = () => {
             </div>
           </a>
           <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
-            <div className="p-6 shadow-md rounded-md hover:scale-105 ease-in duration-300 bg-gray-50">
-              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4 sm:grid-cols-2 justify-center items-center">
+            <div className="rounded-md bg-gray-50 p-6 shadow-md duration-300 ease-in hover:scale-105">
+              <div className="grid items-center justify-center gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                 <div className="m-auto">
                   <Image src={MySql} width="64px" height="64px" alt="/" />
                 </div>
@@ -141,8 +141,8 @@ const Skills = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="p-6 shadow-md rounded-md hover:scale-105 ease-in duration-300 bg-gray-50">
-              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4 sm:grid-cols-2 justify-center items-center">
+            <div className="rounded-md bg-gray-50 p-6 shadow-md duration-300 ease-in hover:scale-105">
+              <div className="grid items-center justify-center gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                 <div className="m-auto">
                   <Image src={Mongo} width="64px" height="64px" alt="/" />
                 </div>
@@ -153,8 +153,8 @@ const Skills = () => {
             </div>
           </a>
           <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer">
-            <div className="p-6 shadow-md rounded-md hover:scale-105 ease-in duration-300 bg-gray-50">
-              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4 sm:grid-cols-2 justify-center items-center">
+            <div className="rounded-md bg-gray-50 p-6 shadow-md duration-300 ease-in hover:scale-105">
+              <div className="grid items-center justify-center gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                 <div className="m-auto">
                   <Image src={NodeJs} width="64px" height="64px" alt="/" />
                 </div>
@@ -165,8 +165,8 @@ const Skills = () => {
             </div>
           </a>
           <a href="https://www.drupal.org/" target="_blank" rel="noreferrer">
-            <div className="p-6 shadow-md rounded-md hover:scale-105 ease-in duration-300 bg-gray-50">
-              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4 sm:grid-cols-2 justify-center items-center">
+            <div className="rounded-md bg-gray-50 p-6 shadow-md duration-300 ease-in hover:scale-105">
+              <div className="grid items-center justify-center gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                 <div className="m-auto">
                   <Image src={Drupal} width="64px" height="64px" alt="/" />
                 </div>
@@ -177,8 +177,8 @@ const Skills = () => {
             </div>
           </a>
           <a href="https://www.shopify.com/" target="_blank" rel="noreferrer">
-            <div className="p-6 shadow-md rounded-md hover:scale-105 ease-in duration-300 bg-gray-50">
-              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4 sm:grid-cols-2 justify-center items-center">
+            <div className="rounded-md bg-gray-50 p-6 shadow-md duration-300 ease-in hover:scale-105">
+              <div className="grid items-center justify-center gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                 <div className="m-auto">
                   <Image src={Shopify} width="64px" height="64px" alt="/" />
                 </div>
@@ -189,8 +189,8 @@ const Skills = () => {
             </div>
           </a>
           <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer">
-            <div className="p-6 shadow-md rounded-md hover:scale-105 ease-in duration-300 bg-gray-50">
-              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4 sm:grid-cols-2 justify-center items-center">
+            <div className="rounded-md bg-gray-50 p-6 shadow-md duration-300 ease-in hover:scale-105">
+              <div className="grid items-center justify-center gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                 <div className="m-auto">
                   <Image src={Bootstrap} width="64px" height="64px" alt="/" />
                 </div>
@@ -201,8 +201,8 @@ const Skills = () => {
             </div>
           </a>
           <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
-            <div className="p-6 shadow-md rounded-md hover:scale-105 ease-in duration-300 bg-gray-50">
-              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4 sm:grid-cols-2 justify-center items-center">
+            <div className="rounded-md bg-gray-50 p-6 shadow-md duration-300 ease-in hover:scale-105">
+              <div className="grid items-center justify-center gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                 <div className="m-auto">
                   <Image src={Tailwind} width="64px" height="64px" alt="/" />
                 </div>
@@ -217,8 +217,8 @@ const Skills = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="p-6 shadow-md rounded-md hover:scale-105 ease-in duration-300 bg-gray-50">
-              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4 sm:grid-cols-2 justify-center items-center">
+            <div className="rounded-md bg-gray-50 p-6 shadow-md duration-300 ease-in hover:scale-105">
+              <div className="grid items-center justify-center gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                 <div className="m-auto">
                   <Image src={Photoshop} width="64px" height="64px" alt="/" />
                 </div>
@@ -233,8 +233,8 @@ const Skills = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="p-6 shadow-md rounded-md hover:scale-105 ease-in duration-300 bg-gray-50">
-              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-4 sm:grid-cols-2 justify-center items-center">
+            <div className="rounded-md bg-gray-50 p-6 shadow-md duration-300 ease-in hover:scale-105">
+              <div className="grid items-center justify-center gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                 <div className="m-auto">
                   <Image src={Wordpress} width="64px" height="64px" alt="/" />
                 </div>

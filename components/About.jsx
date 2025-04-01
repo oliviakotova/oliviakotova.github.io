@@ -5,10 +5,10 @@ import AboutImg from "../public/assets/my_desk.png";
 
 const About = () => {
   return (
-    <div id="about" className="w-full md:h-screen flex items-center">
-      <div className="max-w-[1240px] m-auto md:grid px-6 grid-cols-3 py-16gap-8">
+    <div id="about" className="flex w-full items-center md:h-screen">
+      <div className="py-16gap-8 m-auto max-w-[1240px] grid-cols-3 px-6 md:grid">
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-[#4382e8]">
+          <p className="text-xl uppercase tracking-widest text-[#4382e8]">
             About me
           </p>
 
@@ -54,10 +54,10 @@ const About = () => {
             <p className="py-2 text-gray-600 underline cursor-pointer">my CV</p>
           </Link> */}
         </div>
-        <div className="w-full h-auto m-auto shadow-md rounded-xl flex items-center justify-center">
+        <div className="m-auto flex h-auto w-full items-center justify-center rounded-xl shadow-md">
           {" "}
           <Image
-            className="rounded-xl group-hover:opacity-20 transition-all duration-300"
+            className="rounded-xl transition-all duration-300 group-hover:opacity-20"
             src={AboutImg}
             alt="Olivia's Workspace"
           />
