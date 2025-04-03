@@ -5,14 +5,9 @@ import Main from "../components/Main";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contacts from "../components/Contacts";
-import LoadingSpinner from "../components/LoadingSpinner";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setLoading(false);
-  }, []);
 
   return (
     <div>
@@ -65,9 +60,6 @@ export default function Home() {
           })}
         </script>
       </Head>
-
-      {/* Show the spinner if the page is still loading */}
-      {loading && <LoadingSpinner />}
 
       <section id="home">
         <Main />
