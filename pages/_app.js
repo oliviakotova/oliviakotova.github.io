@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import { ThemeProvider } from "../context/ThemeContext";
 import Spinner from "../components/Spinner";
+import StarryPreloader from "../components/StarryPreloader";
 
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = useState(true);
