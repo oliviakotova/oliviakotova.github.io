@@ -34,9 +34,9 @@ const About = () => {
           </p>
           <p className="py-2 text-gray-600">
             {" "}
-            In addition to my education, I’ve worked as a freelance web
-            developer and remote photo retoucher, delivering digital solutions
-            that are both creative and functional.{" "}
+            In addition to my education, I’ve worked as a freelance Web
+            Disigner/ Web Developer and remote Photo Retoucher, delivering
+            digital solutions that are both creative and functional.{" "}
           </p>
           <p className="py-2 text-gray-600">
             I’m now ready to bring my diverse skill set—combining technical
